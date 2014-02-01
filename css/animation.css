@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+#article1{
+	display:none;
+}
+video{
+	position:relative;
+	margin:0 0 0 5%;
+	width:90%;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	#article1{
+	display:inline-block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+#article1{
+	display:inline-block;
+}
+#article2{
+	background-image: none;
+}
+section{
+	background-image:url(../images/oldpaper2.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-size:100% 100%;
+	padding: 3%;
+}
+.sections img{
+	position:relative;
+	float:left;
+	padding:0 2%;
+}
+.sections{
+	position:relative;
+	top: -10%;	
+	padding:3%;
+}
+section1{
+	padding:2%;
+	margin-bottom:3%;
+} 
+video{
+	position:relative;
+	margin:3% 0  0 25%;
+	width:50%;
+}
+}
