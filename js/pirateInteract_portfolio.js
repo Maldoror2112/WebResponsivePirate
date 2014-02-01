@@ -16,7 +16,12 @@ $(function(){
 				$('#2d_art').off();
 			}else{
 				$('#a1InsideText').html($htmlAdd);		
+<<<<<<< HEAD
 			}		
+=======
+			}
+			$('#gallery').fadeIn("5000");	
+>>>>>>> 3d4285d... JS code for 2d photoshop/illustrator buttons
 	});
 	
 	$('#a1InsideText').on('click', '#twoDArt', function(){
