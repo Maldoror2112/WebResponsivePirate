@@ -33,6 +33,17 @@ li{
 	
 }
 
+<<<<<<< HEAD
+=======
+#wrapper{
+	float:left;
+	margin-right: auto;
+	width: 38%;
+	padding-left: 1.5489%;
+	padding-right: 1.5489%;
+}
+
+>>>>>>> e38a5ec... CSS changes to text and fonts and adding styling to the iamges
 .gridContainer {
 	margin-left: auto;
 	margin-right: auto;
@@ -98,6 +109,15 @@ li{
 	font-size:inherit;
 	
 }
+<<<<<<< HEAD
+=======
+
+/*#wrapper{
+	width: 91.4836%;
+	padding-left: 0.7581%;
+	padding-right: 2.7581%;
+}*/
+>>>>>>> e38a5ec... CSS changes to text and fonts and adding styling to the iamges
 .gridContainer {
 	width: 91.4836%;
 	padding-left: 0.7581%;
@@ -156,6 +176,17 @@ li{
 	font-size:larger;	
 }
 
+<<<<<<< HEAD
+=======
+/*#wrapper{
+	width: 95.0217%;
+	max-width: 800px;
+	padding-left: 0.4891%;
+	padding-right: 0.4891%;
+	margin: auto;
+}*/
+
+>>>>>>> e38a5ec... CSS changes to text and fonts and adding styling to the iamges
 .gridContainer {
 	width: 89.0217%;
 	max-width: 1232px;

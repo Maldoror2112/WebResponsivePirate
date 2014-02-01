@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content{ }
+  #content h1 { font-size: 2.4em; font-weight: normal; line-height: 32px; margin: 30px 0 50px 0; }
+  #content p { font-size: 1.4em; line-height: 22px; margin-bottom: 20px; }
+  
+  #gallery{
+	  display:none;
+  }
+  
+  /* relevant for the tutorial - start */
+  #gallery { 
+    clear:both;
+	margin:0px;
+	padding:0px;
+	position: relative;
+  }
+  
+  #pictures { 
+  clear:both;
+  position: relative; 
+  height: 408px; 
+  }
+    
+	#pictures img { 
+	display:inline-block;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	}
+    
+    #prev{		  
+	  float:left; 
+	  padding:0px;
+	  display:inline-block;
+	  margin-left:40px;
+	  text-align:center;
+	  font-size: 1.2em; 
+	  border:#3A1902 solid 1px;
+	  border-radius:5px;
+	  }
+	  
+	  #next{
+		  display:inline-block;
+		  margin-left:70px;
+		  font-size: 1.2em;
+		 border:#3A1902 solid 1px;
+	     border-radius:5px; 
+	  }
+	  
+	  #pic_descr{
+		float:right;
+		width:500px;
+		position:absolute;
+		left: 500px;
+		top:5px; 
+		border:solid 1px; 
+	  }
+  /* relevant for the tutorial - end */
+  
+  
