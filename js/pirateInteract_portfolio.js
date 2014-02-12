@@ -14,6 +14,7 @@ $(function(){
 			var $htmlAdd = $('<p><img id="twoDArt" src="images/waxseal.png"/><img id="twoDArt" src="images/waxseal.png"/><img id="twoDArt" src="images/waxseal.png"/>Click on images below to see larger versions</p>');
 =======
 			var $htmlAdd = $('<p id="twoDDescription"><img id="twoDArt" src="images/gallery/ChooChooExplain1_sm.png" />Click on images below to see larger versions</p>');
+<<<<<<< HEAD
 >>>>>>> c572e27... Main big picture enalarged
 			var $articleElement = $('#a1InsideText');
 			if($articleElement === $htmlAdd){
@@ -31,10 +32,16 @@ $(function(){
 			
 			$('#drag_pic').bind('draggable', dragEnabled);
 >>>>>>> c572e27... Main big picture enalarged
+=======
+			
+			$('#gallery2D').fadeIn("5000");	
+			
+			
+>>>>>>> e49c08b... Media Queries and web responsive layout tightened up for the portfolio page. Bio entries added to also.
 	});
 	
 	$('#a1InsideText').on('click', '#twoDArt', function(){
-		//var $choochooImage = $('<img src="images/gallery/ChooChooExplain1.png"/>');
+		
 		$('#dialog').attr('title','Choo Choo Nano Explained').html("<img src='images/gallery/ChooChooExplain1.png'/>").dialog({width:'800px', height:'auto', modal: true, resizable: false, show:'fadeIn', top:'25%', left:'50%'});
 	});	
 	
