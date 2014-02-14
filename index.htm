@@ -24,14 +24,14 @@ Do the following if you're using your customized build of modernizr (http://www.
 * add the "no-js" class to the html tags at the top
 * you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
 -->
-<!--[if lt IE 9]>
+<!--[if lt IE 9]-->
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<!--[endif]-->
 <script src="js/respond.min.js"></script>
 <script src="js/pirateInteract.js"></script>
-<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.js" type="text/javascript"></script>
+ 
 
 </head>
 
@@ -48,9 +48,8 @@ Do the following if you're using your customized build of modernizr (http://www.
              
 <div id="article1">     
   	<h2 id="titleArticle1">Ahoy all ye Scalley wags!</h2>
-    <span id="image1"><img name="pic1" src="images/default.png">
-  	<p id="a1InsideText">My name is <strong>Doug Hauger</strong> and I am a technical artist who currently lives in San Francisco, California. I love all things creative as well as all things tech. My tools are mainly Adobe Creative Suite and HTML\Javascript\Jquery.
-    </p></span>
+  	<p id="a1InsideText">My name is <strong>Doug Hauger</strong> and I am a technical artist who currently lives in San Francisco, California. I love all things creative as well as all things tech. My tools are mainly Adobe Creative Suite and HTML 5\Javascript\Jquery.
+    </p>
   <footer> <h4 id="authorArticle1">written by Doug Hauger</h4></footer>
 </div>
  
@@ -65,7 +64,7 @@ Do the following if you're using your customized build of modernizr (http://www.
         <li id="tabletsVsConsole" class="articleButton">Theory on Tablets vs Consoles</li>
         <li id="tutorialReference" class="articleButton">Awesome Tutorial Reference</li>
       </ul>
-      <div>Updated 11/14/2013</div>
+      <div>Updated 02/08/2014</div>
       </br>
       </br>
   </div> 
@@ -78,9 +77,10 @@ Do the following if you're using your customized build of modernizr (http://www.
 <div id="article2">
       <h2 id="titleArticle2">What be my purpose?</h2>
   
-  	<p id="a2InsideText"> If I can combine tech and creativity, then I am one happy Pirate. some of the things I do are found below.</p>
+  	<div id="a2InsideText"> If I can combine tech and creativity, then I am one happy Pirate. some of the things I do are:
     <ul>
-    	<li>Web design, layout and development</li>
+    	<li>Web design, layout and development<a href="#" id="showHideListP1">More</a></li>
+        	<p id="listP1" style="display:none">and I am a technical artist who currently lives in San Francisco, California. I love all things creative as well as all things tech. My tools are mainly Adobe Creative Suite and HTML </p>
         <li>3D modeling animation/Game Art</li>
         <li>Mobile and Web UI/UX</li>
         <li>Game design and documentation</li>
@@ -90,6 +90,7 @@ Do the following if you're using your customized build of modernizr (http://www.
     </ul>  		
   
   	<footer> <h4 id="authorArticle2"></h4></footer>
+    </div>
 </div>
   
 <div id="footerbottom">Copyright 2013 Doug Hauger. All Rights Reserved - Coded and built by Doug Hauger</div>
