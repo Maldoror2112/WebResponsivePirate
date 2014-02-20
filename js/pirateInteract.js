@@ -3,21 +3,7 @@ window.onload = initLinks;
 
 function initLinks(){
 
-	//var lepidopteraButton = document.getElementById("lepidoptera");
-//	lepidopteraButton.onclick = makeLepidoptera;
 	
-	//var unityButton = document.getElementById("unity");
-//	unityButton.onclick = makeUnity;
-//	
-//	var flashDeadButton = document.getElementById("flashDead?");
-//	flashDeadButton.onclick = makeFlashDead;
-//	
-//	var tabletsVsConsoleButton = document.getElementById("tabletsVsConsole");
-//	tabletsVsConsoleButton.onclick = makeTabletsVsConsole;
-//	
-//	var tutorialReferenceButton = document.getElementById("tutorialReference");
-//	tutorialReferenceButton.onclick = makeTutorialReference;
-
 $(function(){
 	
 	$("#lepidoptera").on('click', function(){
@@ -25,6 +11,8 @@ $(function(){
 	$('#titleArticle1').text('Lepidoptera the Novel on Amazon now!');
 	
 	$('#a1InsideText').html("<div ><a href='http://www.amazon.com/Lepidoptera-Doug-Hauger/dp/1606938959/ref=sr_1_5?s=books&ie=UTF8&qid=1392338573&sr=1-5&keywords=lepidoptera' target='_blank'><img src='images/pic2.jpg' id='ledidoptera_pic' style='display:inline-block'/ ></a><p id='article1Lepidoptera'>Lepidoptera is my first book that was completed in the winter of 2003. I spent eight years writing it and I still consider it one of my greatest accomplishments. It can be found on Amazon currently and is published by Eloquent books. I hope to have an e-book version up and running soon, or having a free download that anyone can print up if they want. I have a sequel in progress, but very little time to work on it at present. </p></div>");
+	
+	$('#authorArticle1').text("written by Doug Hauger");
 		
 	//var articleText1="<div ><img src='images/pic2.jpg' id='ledidoptera_pic' style='display:inline-block'/> <p id='article1Lepidoptera'>Lepidoptera is my first book that was completed in the winter of 2003. I spent eight years writing it and I still consider it one of my greatest accomplishments.It can be found on Amazon currently and is published by Eloquent books. I hope to have an e-book version up and running soon, or having a free download that anyone can print up if they want. I have a sequel in progress, but since this one took me 8 years to complete, who knows how long that one will take. </p></div>";
 //	
@@ -35,69 +23,47 @@ $(function(){
   });
 });
 
-	//function makeUnity(){
-//	var articleText1 = "Unity is a cross-platform game engine with a built-in IDE developed by Unity Technologies. It is used to develop video games for web plugins, desktop platforms, consoles and mobile devices. It grew from an OS X supported game development tool in 2005 to a multi-platform game engine. The latest update, Unity 4.2.2, was released October 2013.";
-//	
-//	var articleText2 = "<div><strong>It currently supports development for iOS, Android, Windows, BlackBerry 10, OS X, Linux, web browsers, Flash, PlayStation 3, Xbox 360, Windows Phone 8, and Wii U. Two versions of the game engine are available for download, Unity and Unity Pro.   </br> </br>  <strong>Renderer:</strong></br>The graphics engine uses Direct3D (Windows, Xbox 360), OpenGL (Mac, Windows, Linux, PS3), OpenGL ES (Android, iOS), and proprietary APIs (Wii). There is support for bump mapping, reflection mapping, parallax mapping, screen space ambient occlusion (SSAO), dynamic shadows using shadow maps, render-to-texture and full-screen post-processing effects. Unity supports art assets and file formats from 3ds Max, Maya, Softimage, Blender, modo, ZBrush, Cinema 4D, Cheetah3D, Adobe Photoshop, Adobe Fireworks and Allegorithmic Substance.</br> These assets can be added to the game project, and managed through Unity's graphical user interface. The ShaderLab language is used for shaders, supporting both declarative 'programming' of the fixed-function pipeline and shader programs written in GLSL or Cg. A shader can include multiple variants and a declarative fallback specification, allowing Unity to detect the best variant for the current video card, and if none are compatible, fall back to an alternative shader that may sacrifice features for performance. </br> </br>As of August 3rd, 2013, with the release of 4.2, Unity allows Indie developers to use Realtime shadows only for Directional lights, also the support of DirectX11 is added, which gives shadows a more pixel perfect resolution, textures to create 3d objects from grayscale, more facial graphics, smoother animations and a boost to the FPS.</br> </br><strong>Scripting:</strong></br> The game engine's scripting is built on Mono 2.6, the open-source implementation of the .NET Framework. Programmers can use UnityScript (a custom language with ECMAScript-inspired syntax, referred to as JavaScript by the software), C#, or Boo (which has a Python-inspired syntax). Starting with the 3.0 release, Unity ships with a customized version of MonoDevelop for debugging scripts.</br><strong>Asset Tracking:</strong></br> Unity also includes the Unity Asset Server - a version control solution for the developer's game assets and scripts. It uses PostgreSQL as a backend, an audio system built on the FMOD library (with ability to playback Ogg Vorbis compressed audio), video playback using the Theora codec, a terrain and vegetation engine (which supports tree billboarding, Occlusion Culling with Umbra), built-in lightmapping and global illumination with Beast, multiplayer networking using RakNet, and built-in pathfinding navigation meshes.</strong></div>";
-//	
-//	var title1 = "Whats so amazing about Unity anyway?";
-//	var title2 = "";
-//	var authorName1 = "";
-//			
-//	var articleElement1 = document.getElementById("a1InsideText");
-//	articleElement1.innerHTML = articleText1;
-//	var title = document.getElementById("titleArticle1");
-//	title.innerHTML = title1;
-//	var author1 = document.getElementById("authorArticle1");
-//	author1.innerHTML = authorName1;
-//	var articleElement2 = document.getElementById("article2");
-//	articleElement2.innerHTML = articleText2;
-//	var titleWrite2 = document.getElementById("titleArticle2");
-//	titleWrite2.innerHTML = title2;
-//	}
-//
-//	function makeFlashDead(){
-//	var articleText1 = "Although Microsoft has been proselytising the 'plugin-free Web' for the last couple of years, it doesn't think Flash is dead yet, either.</br></br> ";
-//	
-//	var articleText2 = "<div> <strong>  That's why Internet Explorer 10 on Windows RT ended up including Flash built into the browser (and updated along with the rest of Windows, to avoid the security problems as hackers turn their attention away from the better-secured Windows operating system and onto common applications like Flash and Acrobat).    </br> </br>    Initially, Flash was locked down on Windows RT and in the 'modern' version of IE 10 even on Windows 8, so that it would only run if sites were on a Microsoft approved whitelist. </br> </br>Microsoft is also pushing the touchable web, so sites that use Flash behaviours that need a mouse hovering in the right place to trigger them were blocked. </br> </br> Blocking Flash was a way to protect battery life, but recent improvements to the Flash player - like Stage3D hardware acceleration (along with better coding on many websites using Flash) - led to Microsoft switching from a whitelist to a blacklist. And the blacklist has a mere handful of sites on it as well. </br> </br> Why is there still a blacklist at all? A Microsoft spokesperson told us: 'Inclusion on the Compatibility View list occurs when we have reports from users or when we find through our own testing that an experience is severely degraded or non-functional' </br> </br> When the experience is fixed, the site owner can contact Microsoft for removal from the Compatibility View list. </br> </br> I also wondered why the blacklist blocks Flash on sites that need other ActiveX plug-ins (which don't work on Windows RT); would that just make an already bad experience just a little bit worse for the user? </br> </br> The problem is that on those sites, Flash only works if, say, Java, is also available - so even if Flash was turned on, it wouldn't work. The browser can't detect on its own that Flash needs Java, so it would load Flash even though it wouldn't work. </br> </br> Realistically, Flash isn't going away for a while. Yes, there are other Web video options, although continuing disagreements mean HTML5 video is still split between WebM and the popular H.264. </br> </br> And the recent bitter philosophical arguments within the W3C about adding Encrypted Media Extensions to HTML5 for playing back encrypted content — even though this is intended not as a new DRM system but a standards-based way to interact with DRM systems — mean there isn't going to be a way to do everything you can do in Flash without a plugin any time soon. So Adobe should have a market for its next generation of developer tools. </br> </br> Much of Adobe's recent public focus has been on its HTML5 development tools. But despite a shift of emphasis Flash hasn't been left behind, and a new generation of Flash design and programming tooling isn't far away. </br> </br> Over the Easter holiday weekend the company posted a new video on its Flash Professional Team blog, demonstrating a handful of features from the next release of the Flash tooling. </br> </br> Currently codenamed Hellcat (a change from the sandwich codenames of the last batch of Flash development tools), the new version of Flash Professional is being designed to take advantage of the current generation of computer hardware. </br></br> If you've got a high DPI screen, on a Surface Pro or a Retina MacBook (or even a Chromebook Pixel), you'll get a UI that takes advantage of all those pixels – and based on the video, it appears also lets you build Flash apps that work on those new screens. The new UI can also switch between light and dark themes, much like other components of Adobe's Creative Suite. </br> </br> Developers need tools that are fast and flexible, and the new Flash Professional will be available as a 64-bit application, and as native Cocoa on Mac OS. That means it'll load large files quickly, and Adobe's video demo shows Hellcat launching around 10x faster than Flash Professional CS6. It’s also a lot faster for common interactions, like scrubbing through timelines.</br> </br> There's a lot still to learn about Hellcat. For one thing Adobe hasn't talked about new features in Flash, or shown anything of the ActionScript code development experience. With Flash still a common tool for developing casual games, and for complex web user interfaces, it's important for developers to understand the roadmap for the player, as well as for the development tooling. If Flash is to remain relevant, Adobe will need to show a lot more at its upcoming MAX event.</strong></div>";
-//	
-//	var title1 = "How dead is Flash?";
-//	var title2 = "";
-//	var authorName1 = "";
-//			
-//	var articleElement1 = document.getElementById("a1InsideText");
-//	articleElement1.innerHTML = articleText1;
-//	var title = document.getElementById("titleArticle1");
-//	title.innerHTML = title1;
-//	var author1 = document.getElementById("authorArticle1");
-//	author1.innerHTML = authorName1;
-//	var articleElement2 = document.getElementById("article2");
-//	articleElement2.innerHTML = articleText2;
-//	var titleWrite2 = document.getElementById("titleArticle2");
-//	titleWrite2.innerHTML = title2;
-//	}
-//
-//	function makeTabletsVsConsole(){
-//	var articleText1 = "This is where my tablets overcoming consoles unless consoles become more like tablets. Synth delectus YOLO banh mi voluptate, gluten-free Blue Bottle art party Godard sunt ennui PBR&B butcher locavore. Literally laborum hella tousled elit fap.";
-//	
-//	var articleText2 = "Bitters butcher Neutra distillery, pickled messenger bag drinking vinegar mumblecore duis dolor post-ironic gentrify officia craft beer. </br></br> Pariatur fixie tofu biodiesel, PBR&B McSweeney's velit actually non salvia Pinterest. Voluptate blog aute VHS, distillery shabby chic labore. XOXO sustainable PBR&B laboris kale chips et ut, hoodie do. Reprehenderit Thundercats distillery, twee deserunt banh mi ullamco.Cillum McSweeney's post-ironic, ethical try-hard gentrify Echo Park messenger bag Shoreditch roof party retro. Meggings ea deserunt Tonx DIY dolor fugiat, PBR&B skateboard assumenda. Et you probably haven't heard of them ugh, swag plaid master cleanse fanny pack. Ennui viral gluten-free non. Messenger bag est ethnic, tempor selvage ex Tonx swag adipisicing Wes Anderson dreamcatcher sint blog. Truffaut freegan master cleanse, pariatur vegan ethical keytar put a bird on it Marfa iPhone minim. Ad wayfarers YOLO, small batch seitan ennui photo booth fugiat consequat cornhole magna cupidatat swag flexitarian.</br></br> Synth delectus YOLO banh mi voluptate, gluten-free Blue Bottle art party Godard sunt ennui PBR&B butcher locavore. Literally laborum hella tousled elit fap. Bitters butcher Neutra distillery, pickled messenger bag drinking vinegar mumblecore duis dolor post-ironic gentrify officia craft beer. Pariatur fixie tofu biodiesel, PBR&B McSweeney's velit actually non salvia Pinterest. Voluptate blog aute VHS, distillery shabby chic labore. XOXO sustainable PBR&B laboris kale chips et ut, hoodie do. Reprehenderit Thundercats distillery, twee deserunt banh mi ullamco. </br></br> Deep v wolf keytar placeat post-ironic, disrupt eiusmod nihil leggings Marfa mixtape. Sapiente butcher ethnic irony vegan artisan, qui cred typewriter elit messenger bag XOXO sint gluten-free swag. Mixtape leggings mumblecore occupy seitan. Duis mlkshk Intelligentsia, authentic fingerstache cillum keytar Cosby sweater do butcher farm-to-table irony meggings flexitarian. Roof party minim hashtag literally Shoreditch Banksy. Swag Echo Park laborum, ennui Cosby sweater brunch assumenda fap velit gastropub literally nesciunt sunt cornhole. Adipisicing nihil artisan Schlitz, raw denim Vice bicycle rights Shoreditch sint aute minim keytar locavore.";
-//	
-//	var title1 = "Theory on Tablets vs Console";
-//	var title2 = "";
-//	var authorName1 = "";
-//			
-//	var articleElement1 = document.getElementById("a1InsideText");
-//	articleElement1.innerHTML = articleText1;
-//	var title = document.getElementById("titleArticle1");
-//	title.innerHTML = title1;
-//	var author1 = document.getElementById("authorArticle1");
-//	author1.innerHTML = authorName1;
-//	var articleElement2 = document.getElementById("article2");
-//	articleElement2.innerHTML = articleText2;
-//	var titleWrite2 = document.getElementById("titleArticle2");
-//	titleWrite2.innerHTML = title2;	
-//	}
-//
+	$("#unity").click(function(){
+		
+		$('#titleArticle1').text('Whats So Great About Unity?');
+	
+	$('#a1InsideText').html("<div > <p id='unity'>Unity is a cross-platform game engine with a built-in IDE developed by Unity Technologies. It is used to develop video games for web plugins, desktop platforms, consoles and mobile devices. It grew from an OS X supported game development tool in 2005 to a multi-platform game engine. The latest update, Unity 4.2.2, was released October 2013. </p></div>");
+	
+	$('#authorArticle1').text("");
+	
+	$('#titleArticle2').text("The Specs and other Wonders of the Gaming Seas!");
+	
+	$('#a2InsideText').html("<div><strong> Unity currently supports development for iOS, Android, Windows, BlackBerry 10, OS X, Linux, web browsers, Flash, PlayStation 3, Xbox 360, Windows Phone 8, and Wii U. Two versions of the game engine are available for download, Unity and Unity Pro.   </br> </br>  <strong>Renderer:</strong></br>The graphics engine uses Direct3D (Windows, Xbox 360), OpenGL (Mac, Windows, Linux, PS3), OpenGL ES (Android, iOS), and proprietary APIs (Wii). There is support for bump mapping, reflection mapping, parallax mapping, screen space ambient occlusion (SSAO), dynamic shadows using shadow maps, render-to-texture and full-screen post-processing effects. Unity supports art assets and file formats from 3ds Max, Maya, Softimage, Blender, modo, ZBrush, Cinema 4D, Cheetah3D, Adobe Photoshop, Adobe Fireworks and Allegorithmic Substance. </br> These assets can be added to the game project, and managed through Unity's graphical user interface. The ShaderLab language is used for shaders, supporting both declarative 'programming' of the fixed-function pipeline and shader programs written in GLSL or Cg. A shader can include multiple variants and a declarative fallback specification, allowing Unity to detect the best variant for the current video card, and if none are compatible, fall back to an alternative shader that may sacrifice features for performance. </br> </br>As of August 3rd, 2013, with the release of 4.2, Unity allows Indie developers to use Realtime shadows only for Directional lights, also the support of DirectX11 is added, which gives shadows a more pixel perfect resolution, textures to create 3d objects from grayscale, more facial graphics, smoother animations and a boost to the FPS.</br> </br><strong>Scripting:</strong></br> The game engine's scripting is built on Mono 2.6, the open-source implementation of the .NET Framework. Programmers can use UnityScript (a custom language with ECMAScript-inspired syntax, referred to as JavaScript by the software), C#, or Boo (which has a Python-inspired syntax). Starting with the 3.0 release, Unity ships with a customized version of MonoDevelop for debugging scripts.</br><strong>Asset Tracking:</strong></br> Unity also includes the Unity Asset Server - a version control solution for the developer's game assets and scripts. It uses PostgreSQL as a backend, an audio system built on the FMOD library (with ability to playback Ogg Vorbis compressed audio), video playback using the Theora codec, a terrain and vegetation engine (which supports tree billboarding, Occlusion Culling with Umbra), built-in lightmapping and global illumination with Beast, multiplayer networking using RakNet, and built-in pathfinding navigation meshes.</strong></div>");
+
+});
+	
+$("#flashDead").click(function(){
+	
+	$('#titleArticle1').text('How Dead is Flash?');
+	
+	$('#a1InsideText').html("Lots of good articles about the lessons and evolution of this scenario. One of the best I have seen is <a href='http://mobileopportunity.blogspot.com/2011/11/lessons-from-failure-of-flash-greed.html' target='blank'>Micheal Mace's</a> assessment of the whole deal. Below is a portion of the article. Click on his name to read the full version.");
+	
+	$('#authorArticle1').text("written by Micheal Mace");
+	
+	$('#titleArticle2').text("A quick, oversimplified history of Flash");
+	
+	$('#a2InsideText').html("<div> <strong>In the software world, there is an inherent conflict between setting a broad standard and making money.  If you have good software technology and you're willing to give it away, you can get people to adopt it very broadly, but you will go broke in the process.  On the other hand, if you charge money for your technology, you can stay in business, but it's very hard to get it broadly adopted as a standard because people don't want to lock themselves into paying you.<br/><br/>Clever software companies have long realized that you can work around this conflict by giving away one technology to make it a standard, and then charging for something else related to it.  For example, many open source software companies give away their core product, but charge for hosting and support and other services.  Android is another example -- it's a free operating system for mobile phone manufacturers, but if you use it in your phone Google also tries to coerce you into bundling its services, which extract revenue from your customers.<br/><br/>In the case of Flash, the player software was given away for free on the web, and Macromedia (the owner of Flash at the time) made its money by selling Flash content development tools.  The free Flash player eventually took on two roles on the web: it was the preferred way to create artistically-sophisticated web content, including an active subculture of online gaming, and it became one of the most popular ways to play video.  Flash reached a point of critical mass where most people felt they just had to have the player installed in their browser.  It became a de facto standard on the web.<br/><br/>Enter Japan Inc., carrying cash.  The rise of mobile devices changed the situation for Flash.  Long before today's smartphones, with their sophisticated web browsers, Japan was the center of mobile phone innovation, and the dominant player there was NTT DoCoMo, with its proprietary iMode phone platform.  The folks at DoCoMo wanted to create more compelling multimedia experiences for their iMode phones, and so in early 2003 they licensed Macromedia's Flash Lite, the mobile version of Flash, for inclusion in iMode phones (link).<br/><br/>The deal was a breakthrough for Macromedia.  Instead of giving away the flash client, the way it had on the PC, Macromedia could charge for the client, have it forced into the hands of every user, and continue to also make money selling development tools.  The company had found a way to have its cake and eat it too!  In late 2004, the iMode deal was extended worldwide (link), and I'm sure Macromedia had visions of global domination.<br/><br/>Unfortunately for Flash, Japan is a unique phone market, and DoCoMo is a unique operator.  The DoCoMo deal could not be duplicated on most phone platforms other than iMode.  Macromedia, and later Adobe, was now trapped by its own success.  To make Flash Lite a standard in mobile, it would have needed to give away the player, undercutting its lucrative DoCoMo deal.  When you have a whole business unit focused on making money from licensing the player, giving it away would mean missing revenue projections and laying off a lot of people.  Macromedia chose the revenue, and Flash Lite never became a mobile standard.<br/><br/>Without fully realizing it, Macromedia had undermined the business model for Flash itself. The more popular mobile became, the weaker Flash would be.<br/><br/>Enter the modern smartphone.  Jump forward to 2007, when the iPhone and other modern smartphones made full mobile web browsing practical.  Adobe, by now the owner of Flash, was completely unprepared to respond.  Even if it started giving away Flash Lite, the player had been designed for limited-function feature phones and could not duplicate the full PC Flash experience.  Meanwhile, the full Flash player had been designed for PCs; it was too fat to run well on a smartphone.  So the full web had moved to a place where Adobe could not follow.  The ubiquity of the Flash standard was broken by Adobe itself.<br/><br/>To make things worse, Adobe was by then in the midst of a strategy to upgrade Flash into a full programming layer for mobile devices, a project called Apollo (later renamed AIR).  The promise of AIR was to make all operating systems irrelevant by separating them from their applications.  At the time, I thought Adobe's strategy was very clever (link), but the implementation turned out to be woefully slow.<br/><br/>So here's what Adobe did to itself:<br/><br/>By mismanaging the move to full mobile browsing, it demonstrated that customers were willing to live with a mobile browser that could not display Flash.  Then, by declaring its intent to take over the mobile platform world, Adobe alarmed the other platform companies, especially Apple.  This gave them both the opportunity and the incentive to crush mobile Flash.<br/><br/>Which is exactly what they did.<br/><br/></strong></div>");
+	
+});	
+
+$("#tutorialReference").click(function(){
+	
+	$('#titleArticle1').text('Awesome Tutorial Reference');
+	
+	$('#a1InsideText').html("Under Construction! I hope to compile a pretty exhaustive list of tutorials ranging from 2D Illustrator/Photoshop, 3D, to coding in Javascript/Jquery. There is definitely lots of good stuff out there!");
+	
+	$('#authorArticle1').text("");
+	
+	$('#a2InsideText').html("<div>Brooklyn salvia voluptate food truck, Vice sunt vegan wolf. Keytar freegan squid, Blue Bottle gluten-free mustache VHS Intelligentsia nisi. Shabby chic Wes Anderson do, Tonx XOXO et forage. Bitters blog farm-to-table officia kale chips duis. Nesciunt banjo locavore Banksy nisi. Next level ugh eu, post-ironic beard chia artisan yr fanny pack messenger bag kitsch wolf proident magna aliquip. Eiusmod bicycle rights aesthetic trust fund forage hoodie, quinoa consequat.</br></br> Laboris sed do, Carles ea literally swag seitan locavore. Labore ethnic sapiente ea. Tofu nisi vegan, brunch swag enim Godard shabby chic fixie pickled aesthetic skateboard bitters et ennui. Adipisicing Wes Anderson messenger bag, selfies lomo placeat semiotics readymade. Officia flannel Schlitz, aliquip literally Austin 3 wolf moon farm-to-table Vice Brooklyn. Shabby chic readymade letterpress sunt tattooed velit. Cliche ethnic pickled Williamsburg, art party biodiesel Thundercats nulla.</br></br> Culpa tempor slow-carb, typewriter next level gentrify Odd Future et XOXO cliche sriracha sint cornhole sunt. Kale chips nesciunt plaid, sed gentrify asymmetrical aute dolor food truck scenester sustainable craft beer put a bird on it ea mixtape. Cupidatat actually typewriter meh artisan. Banksy cornhole cardigan deep v food truck, proident PBR&B iPhone tofu elit put a bird on it delectus Odd Future. Yr Odd Future ethical 3 wolf moon, id fixie scenester labore et mollit Intelligentsia odio craft beer gentrify. Brunch kogi chillwave, try-hard ethical plaid master cleanse ugh cupidatat farm-to-table officia messenger bag elit Banksy church-key. Cornhole dolor Pitchfork culpa, drinking vinegar cray PBR irure flexitarian farm-to-table.<div/>");
+	
+	
+})
+
 //	function makeTutorialReference(){
 //	var articleText1= "This is where I rant about all the cool tutorial sites I have found. Occupy Pinterest culpa, reprehenderit fugiat Tumblr Banksy cillum. Beard Williamsburg before they sold out consectetur, banh mi try-hard ullamco put a bird on it church-key elit. Street art locavore Williamsburg Vice quis.";
 //	

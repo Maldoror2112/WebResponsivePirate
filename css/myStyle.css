@@ -13,7 +13,7 @@ img{
 }
 
 p{
-	font-family:"garamond";
+	font-family:"Comic Sans MS", cursive, sans-serif;
 	font-size:16px;
 	color:362008;
 }
@@ -288,21 +288,30 @@ footer{
 	  #next{
 		  clear:both;	
 		  position:relative;
+		  float:right;
 		  display:inline-block;
-		  margin-left:100px;
+		  margin-right:670px;
+		  margin-top:-20px;
 		 text-align:center;
 		 border:#3A1902 solid 1px;
 	     border-radius:5px; 
 	  }
 	  
-	  #pic_descr{
+.pic_descr{
+		display:none;
 		clear:both;
-		display:inline-block;
+		padding:0px;
+		margin:0px;
+		font-family:"Comic Sans MS", cursive, sans-serif;
+		/*display:inline-block;*/
 		float:right;
 		position:relative;
+		width:600px;
 		/*left: 500px;*/
-		/*top:-400px;*/ 
-		border:solid 1px; 
+		right:20px;
+		top:10px; 
+		 
 	  }
+
   /* relevant for portfolio images - end */
   

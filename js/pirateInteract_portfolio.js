@@ -2,6 +2,7 @@
 window.onload = initLinks;
 
 function initLinks(){
+<<<<<<< HEAD
 
 $(function(){
 					
@@ -39,12 +40,15 @@ $(function(){
 			
 >>>>>>> e49c08b... Media Queries and web responsive layout tightened up for the portfolio page. Bio entries added to also.
 	});
+=======
+	var listCount;
+    var currList = 0;
+    var oldList = 0;
+>>>>>>> 6a4cca7... Redid News page in Jquery. Now easier to read and less code.
 	
-	$('#a1InsideText').on('click', '#twoDArt', function(){
-		
-		$('#dialog').attr('title','Choo Choo Nano Explained').html("<img src='images/gallery/ChooChooExplain1.png'/>").dialog({width:'800px', height:'auto', modal: true, resizable: false, show:'fadeIn', top:'25%', left:'50%'});
-	});	
+$(function(){
 	
+<<<<<<< HEAD
 });
 
 <<<<<<< HEAD
@@ -52,6 +56,12 @@ $(function(){
 	function dragEnabled(){
 		alert("Dragging enabled!");	
 	}
+=======
+	$('#2d_art').on('click', function(){
+								
+			$('#gallery2D').fadeIn("5000");				
+	});		
+>>>>>>> 6a4cca7... Redid News page in Jquery. Now easier to read and less code.
 
 	$("a[rel=2dArt]").fancybox({
 		'transitionIn' : 'elastic',
@@ -67,20 +77,40 @@ $(function(){
 
 	 var z = 0; //for setting the initial z-index's
      var inAnimation = false; //flag for testing if we are in a animation
-  
+	 listCount = $('p.pic_descr').size();
+	 $('p.pic_descr:eq('+currList+')').show();
+
+	 //var firstDescr;
+	// var lastDescr = picDescrArray.length;
+	
+	  
   $('#pictures img').each(function() { //set the initial z-index's
     z++; //at the end we have the highest z-index value stored in the z variable
     $(this).css('z-index', z); //apply increased z-index to <img>
-  });
-
+	// alert('array made');
+});
+  
+ 
   function swapFirstLast(isFirst) {
     if(inAnimation) return false; //if already swapping pictures just return
     else inAnimation = true; //set the flag that we process a image
+   	
+    var processZindex, direction, newZindex, inDeCrease, firstDescr; //change for previous or next image	 
     
-    var processZindex, direction, newZindex, inDeCrease; //change for previous or next image
-    
-    if(isFirst) { processZindex = z; direction = '-'; newZindex = 1; inDeCrease = 1; } //set variables for "next" action
-    else { processZindex = 1; direction = ''; newZindex = z; inDeCrease = -1; } //set variables for "previous" action
+    if(isFirst) { processZindex = z; direction = '-'; newZindex = 1; inDeCrease = 1;
+		currList = (oldList-1) % listCount;
+		$('p.pic_descr:eq('+oldList+')').hide(500);
+		$('p.pic_descr:eq('+currList+')').show(500);
+		
+		oldList = currList;	
+	} //set variables for "next" action
+    else { processZindex = 1; direction = '+'; newZindex = z; inDeCrease = -1; 
+		currList = (oldList+1) % listCount;
+		$('p.pic_descr:eq('+oldList+')').hide(500);
+		$('p.pic_descr:eq('+currList+')').show(500);
+		oldList = currList;	
+	} //set variables for "previous" action 
+	
     
     $('#pictures img').each(function() { //process each image
       if($(this).css('z-index') == processZindex) { //if its the image we need to process
@@ -109,5 +139,7 @@ $(function(){
     return swapFirstLast(false); //swap last image to first position
   });
 >>>>>>> c572e27... Main big picture enalarged
+
+});
 
 }
