@@ -49,6 +49,7 @@ $(function(){
 $(function(){
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 
 <<<<<<< HEAD
@@ -59,6 +60,9 @@ $(function(){
 =======
 	$('#2d_art').on('click', function(){
 								
+=======
+	$('#2d_art').on('click', function(){								
+>>>>>>> 59f8a70... Committing all web responsive fixes. Looks good on everything but Safari right now. Got the z-index to work right on Firefox and Chrome.
 			$('#gallery2D').fadeIn("5000");				
 	});		
 >>>>>>> 6a4cca7... Redid News page in Jquery. Now easier to read and less code.
@@ -100,14 +104,14 @@ $(function(){
     if(isFirst) { processZindex = z; direction = '-'; newZindex = 1; inDeCrease = 1;
 		currList = (oldList-1) % listCount;
 		$('p.pic_descr:eq('+oldList+')').hide(500);
-		$('p.pic_descr:eq('+currList+')').show(500);
+		$('p.pic_descr:eq('+currList+')').show(500).css('display','inline');
 		
 		oldList = currList;	
 	} //set variables for "next" action
     else { processZindex = 1; direction = '+'; newZindex = z; inDeCrease = -1; 
 		currList = (oldList+1) % listCount;
 		$('p.pic_descr:eq('+oldList+')').hide(500);
-		$('p.pic_descr:eq('+currList+')').show(500);
+		$('p.pic_descr:eq('+currList+')').show(500).css('display','inline');
 		oldList = currList;	
 	} //set variables for "previous" action 
 	

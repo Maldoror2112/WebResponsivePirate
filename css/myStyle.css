@@ -23,6 +23,7 @@ li{
 	font-family:"Comic Sans MS", cursive, sans-serif; 
 	padding-top:15px;
 	text-align:left;
+	list-style-type:none;
 }
 
 a:link{	text-decoration:none; color:#800000;}
@@ -80,13 +81,18 @@ footer{
 	background-size:contain;
 	background-size:100% 100%;
 	background-repeat:no-repeat;
-	padding:0px 5px 10px 20px;
+	/*padding:0px 5px 10px 10px;*/
 	/*-webkit-box-shadow:rgb(20,20,20) 5px 5px 5px;	
 	background-color:#BEAA6D;
 	border-color:9e8e57;
 	border-width:2px;
 	border-style:solid;
 	float:left;*/
+}
+
+#sidenews_list{
+	margin-right:10px;
+	
 }
 
 #sidelist{
@@ -207,6 +213,7 @@ footer{
 
 #article2{
 	background-image:url(../images/oldpaper2.png);
+	/*z-index:0;*/
 	padding:30px;
 	text-align:left;
 	background-size:contain;
@@ -229,6 +236,7 @@ footer{
 #lepidoptera_pic{
 	clear:both;
 	float:left;
+	padding:10px;
 	display:inline-block;
 	position:relative;
 	margin:5%;
@@ -254,32 +262,43 @@ footer{
  
  /* relevant for portfolio images- start */
   #gallery2D{ 
-    display:none;
+    display:inline;
     clear:both;
 	height:auto;
 	width:auto;
-	margin-left:20px;
 	padding:0px;
 	position: relative;
   }
   
-    
-	#pictures img { 
+  #pictures{
+	 position:relative; 
+}
+	#drag_pic img{ 
 	clear:both;
-	position: relative; 
-	display:inline-block;
-	position: absolute; 
+	/*position: relative;*/
+	/*position: fixed;*/
+	position:absolute; 
+	display:inline;
 	margin-right:100px;
 	top: 0; 
 	left: 0; 
 	}
+
+#buttonsPN{
+	display:inline-flex;
+	clear:both;	  
+	float:left; 
+	position:relative;
+	padding:0px;
+	margin-top:35%;	
+}
     
     #prev{	
 	clear:both;	  
 	  float:left; 
 	  position:relative;
 	  padding:0px;
-	  display:inline-block;
+	  display:inline-flex;
 	  text-align:center;
 	  border:#3A1902 solid 1px;
 	  border-radius:5px;
@@ -289,9 +308,10 @@ footer{
 		  clear:both;	
 		  position:relative;
 		  float:right;
-		  display:inline-block;
-		  margin-right:670px;
-		  margin-top:-20px;
+		  display:inline-flex;
+		  margin-left:25%;
+		  left:100%;
+		 /*top:57px;*/
 		 text-align:center;
 		 border:#3A1902 solid 1px;
 	     border-radius:5px; 
@@ -300,18 +320,14 @@ footer{
 .pic_descr{
 		display:none;
 		clear:both;
-		padding:0px;
-		margin:0px;
-		font-family:"Comic Sans MS", cursive, sans-serif;
-		/*display:inline-block;*/
-		float:right;
 		position:relative;
+		padding:0px;
+		margin-top:-30%;
+		font-family:"Comic Sans MS", cursive, sans-serif;
+		float:right;		
 		width:600px;
-		/*left: 500px;*/
 		right:20px;
-		top:10px; 
-		 
-	  }
+}
 
   /* relevant for portfolio images - end */
   
