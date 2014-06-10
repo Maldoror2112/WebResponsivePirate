@@ -13,14 +13,12 @@ img{
 }
 
 p{
-	font-family:"Comic Sans MS", cursive, sans-serif;
 	font-size:16px;
 	color:362008;
 }
 
 li{
 	clear:both;
-	font-family:"Comic Sans MS", cursive, sans-serif; 
 	padding-top:15px;
 	text-align:left;
 	list-style-type:none;
@@ -32,6 +30,24 @@ a:link{	text-decoration:none; color:#800000;}
 
 a:hover{color:#E70E23; text-decoration:none;}
 
+.articleButton{
+	font-size:1.4em;
+	display:list-item;
+	list-style:none;
+	padding: .5em 0 .5em 0;
+}
+.a1h2{
+	font-size:24px;
+	font-family: 'Yellowtail', cursive;
+	text-align:center;
+	font-weight:bold;
+}
+.a2h2{
+	font-size:24px;
+	font-family: 'Yellowtail', cursive;
+	text-align:center;
+	font-weight:bold;
+}
 .articleButton:link{
 	text-decoration:none; 
 	color:#800000;
@@ -67,7 +83,11 @@ h4{
 	color:#000;
 	text-align:center;
   }
-  
+ #authorArticle p{
+	 display:inline-block;
+	 font-weight:bold;
+	 text-align:center;
+}
 footer{
 	color:#930;
 	text-align:center;
@@ -80,19 +100,12 @@ footer{
 	background-image:url(../images/backboard.png);
 	background-size:contain;
 	background-size:100% 100%;
-	background-repeat:no-repeat;
-	/*padding:0px 5px 10px 10px;*/
-	/*-webkit-box-shadow:rgb(20,20,20) 5px 5px 5px;	
-	background-color:#BEAA6D;
-	border-color:9e8e57;
-	border-width:2px;
-	border-style:solid;
-	float:left;*/
+	background-repeat:no-repeat;	
 }
 
 #sidenews_list{
 	margin-right:10px;
-	
+	text-align:center;	
 }
 
 #sidelist{
@@ -100,7 +113,7 @@ footer{
 	padding:0px 0px 90px -20px;
 }
 	
-#nav p a.news-btn{
+#nav #news-btn{
 	display:block;
 	float:left;
 	position:inherit;	
@@ -110,15 +123,15 @@ footer{
 	margin:1% 0% 6% 3%;
 }
 
-#nav p a.news-btn:hover{
+#nav #news-btn:hover{
 	background-position:bottom;
    }
    
-#nav p a.news-btn:active{
+#nav #news-btn:active{
 	background-position:center;
 }
 
-#nav p a.portfolio-btn{
+#nav #portfolio-btn{
 	display:block;
 	float:left;
 	position:inherit;	
@@ -128,16 +141,15 @@ footer{
 	margin:1% 0% 6% 3%;
 }
 
-#nav p a.portfolio-btn:hover{
+#nav #portfolio-btn:hover{
 	background-position:bottom;
    }
    
-#nav p a.portfolio-btn:active{
+#nav #portfolio-btn:active{
 	background-position:center;
 }
 
-
-#nav p a.video-btn{
+#nav #video-btn{
 	display:block;
 	float:left;
 	position:inherit;	
@@ -147,11 +159,11 @@ footer{
 	margin:1% 0% 6% 3%;
 }
 
-#nav p a.video-btn:hover{
+#nav #video-btn:hover{
 	background-position:bottom;
    }
    
-#nav p a.video-btn:active{
+#nav #video-btn:active{
 	background-position:center;
 }
 
@@ -203,7 +215,7 @@ footer{
 	border:thin #633;
 	}
 #article1 p{
-	padding: 20px;
+	padding: 0 2% 0 2%;
 	}
 #footerbottom{
 	text-align:center;
@@ -234,14 +246,11 @@ footer{
 }
 
 #lepidoptera_pic{
-	clear:both;
+	width:18%;
 	float:left;
-	padding:10px;
-	display:inline-block;
-	position:relative;
-	margin:5%;
-	top:-15px;
-	padding-right:4px;
+	/*display:inline-block;
+	position:relative;*/
+	padding:8px;
 }
 
 #article1Lepidoptera{
@@ -261,8 +270,8 @@ footer{
   
  
  /* relevant for portfolio images- start */
-  #gallery2D{ 
-    display:inline;
+  #gallery{ 
+    display:block;
     clear:both;
 	height:auto;
 	width:auto;
@@ -273,45 +282,42 @@ footer{
   #pictures{
 	 position:relative; 
 }
-	#drag_pic img{ 
+  .drag_pic img{ 
 	clear:both;
 	/*position: relative;*/
 	/*position: fixed;*/
 	position:absolute; 
-	display:inline;
+	display:block;
 	margin-right:100px;
 	top: 0; 
 	left: 0; 
 	}
 
 #buttonsPN{
-	display:inline-flex;
+	display:inline-block;
 	clear:both;	  
 	float:left; 
-	position:relative;
+	position:relative;	
 	padding:0px;
-	margin-top:35%;	
+	/*margin:15% 0 0 8%;	*/
 }
     
     #prev{	
-	clear:both;	  
+	  clear:both;	  
 	  float:left; 
 	  position:relative;
 	  padding:0px;
-	  display:inline-flex;
+	  display:inline-block;
 	  text-align:center;
 	  border:#3A1902 solid 1px;
 	  border-radius:5px;
 	  }
 	  
-	  #next{
+	#next{
 		  clear:both;	
 		  position:relative;
 		  float:right;
-		  display:inline-flex;
-		  margin-left:25%;
-		  left:100%;
-		 /*top:57px;*/
+		  display:inline-block;
 		 text-align:center;
 		 border:#3A1902 solid 1px;
 	     border-radius:5px; 
@@ -322,11 +328,10 @@ footer{
 		clear:both;
 		position:relative;
 		padding:0px;
-		margin-top:-30%;
-		font-family:"Comic Sans MS", cursive, sans-serif;
-		float:right;		
-		width:600px;
-		right:20px;
+		margin-top:3%;
+		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		float:right;
+		right:1%;
 }
 
   /* relevant for portfolio images - end */
