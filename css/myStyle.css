@@ -36,6 +36,23 @@ a:hover{color:#E70E23; text-decoration:none;}
 	list-style:none;
 	padding: .5em 0 .5em 0;
 }
+#article1-land{
+	position:relative;
+	padding:10px;
+	margin:0 auto;
+	text-align:center;
+	background-image:url(../images/oldpaper2.png);
+	background-size:contain;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	border:thin #633;
+	}
+#landingText{
+	font-size:1.8em;
+	font-family: 'Yellowtail', cursive;
+	text-align:center;
+	padding:5%;
+}
 .a1h2{
 	font-size:24px;
 	font-family: 'Yellowtail', cursive;

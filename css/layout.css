@@ -56,6 +56,19 @@ li{
 	display: inline-block;
 	margin-top:0%; 
 }
+#article1-land {
+	clear: both;
+	float: none;
+	font-size: .8em;
+	width: auto;
+	height:80%;
+	display: inline-block;
+	position:absolute;
+	top:10%;
+}
+#landingText{
+	font-size:1.0em;	
+}
 #article1 {
 	clear: both;
 	float: none;
@@ -322,7 +335,12 @@ li{
 	display: inline-block;	
 	margin-top:0%;
 }
-
+#article1-land {
+	height:45%;
+}
+#landingText{
+	font-size:1.8em;
+}
 #article1 {
 	clear: both;
 	float: left;
