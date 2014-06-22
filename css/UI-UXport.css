@@ -17,20 +17,15 @@ section{
 	height:auto;
 	padding: 3%;
 }
-#gallery{
-	position:relative;
-	margin-left:-20%;
-	background-image:url(../images/oldpaper2.png);
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-size:100% 100%;
-	padding: 3%;
-	min-height:350px;
-	min-width:310px;
-}
 #pictures{
 	position:relative;
 	margin-top:-10%;	
+}
+figure.ui_pic{
+	position:absolute;
+	display:block;
+	left:-8%;
+	width:100%;
 }
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
@@ -50,23 +45,28 @@ section{
 	height:auto;
 	padding: 3%;
 }
-#gallery{
-	margin-left:0%;
-	background-image:url(../images/oldpaper2.png);
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-size:100% 100%;
-	padding: 3%;
-	min-height:400px;
-	
+figure.ui_pic{
+	position:absolute;
+	display:block;
+	left:8%;
+	width:60%;
 }
 }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
 @media only screen and (min-width: 769px) {
+#article2{
+	background-image: none;
+}
 #article1{
 	display:inline-block;
+}
+figure.ui_pic{
+	position:absolute;
+	display:block;
+	left:-6%;
+	width:60%;
 }
 section{
 	left: -2%;
@@ -86,7 +86,8 @@ section1{
 	margin-bottom:3%;
 } 
 #gallery{
-	margin-left:-2%;
+	margin-left:3%;
+	margin-top: 8%;
 	min-height:500px;
 	min-width:90%;
 }
