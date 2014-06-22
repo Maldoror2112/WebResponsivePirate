@@ -2,6 +2,8 @@
 window.onload = initLinks;
 
 function initLinks(){
+	
+		
 	$("#nav a").click(function(){
 		/*e.defaultPrevented();*/		
 	    var href = $(this).attr('href');
@@ -11,6 +13,7 @@ function initLinks(){
 		
 		return false;	
 	})
+	
 	
 	/*function move_div(){
 		var windowWidth = $(window).width();

@@ -1,46 +1,59 @@
 <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/video.css" rel="stylesheet" type="text/css"/>
+<title>Videos</title>
+</head>
+
 <body>
 <div id="pageAllWrapper">
-<div id="article1">     
-  	<h2 id="titleArticle1">Here thar be Videos!!!</h2>
-    <span id="image1"><img name="pic1" src="images/default.png">
-  	<p id="a1InsideText">This is where you can veiw some of my videos and demo reels! All things pertaining to motion graphics, editing, animation can be seen here. Maybe even Emporer Nortons Ghost! Whoa!</p></span>
-  <footer> <h4 id="authorArticle1">written by Doug Hauger</h4></footer>
-</div>
+
+<section id="article1" class="sections">     
+  	<h2 id="titleArticle1">Videos!</h2>
+    <h2 id="titleArticle1">Here Thar be Videos!!!</h2>
+    
+  	<p><article class ="pStrong" >This was a sales video I made for the last endeavor I worked on. It was made to help promote and explain
+    what it was that our product did. We were able to raise more money with it and it definitely helped explain what it was we were trying
+    to do, ironically it also helped the team see the vision more than any document I could have written. This was one of those scenarios
+    where I realized that being able to communicate the idea no matter what the medium was the most important thing. This video helped us 
+    focus and see that vision even more. It was also going to be used as a promotional device on you tube when the time came and we finalized
+    the look and feel of the product.</article></p>
+ 
+    <video controls poster="images/prerollPoster.jpg" id="video" width="auto" height="auto">
+  		<source src="images/gallery/video-Animation/SPFinal.mp4" type="video/mp4"></source>
+            <source src="" type="video/webm"></source>
+            <p>Sorry, your browser does not support video
+            	<a href="">Download the Video</a>
+            </p>  
+    </video>
+ 
+  <footer> <h4 id="authorArticle1">Created by Doug Hauger</h4></footer>
+</section>
+ 
   
-<div id="sidenews">
-  <div id="skull"><img src="images/skull1.png" width="81" height="82"/></div> 
-  <div id="sidelist">    
-  <h2>The Bilge Playlist</h2>
-  <ul>
-  	<li id="" class="articleButton">Watch Matrix Regurgitated!</li>
-    <li id="" class="articleButton">Social Planet Sales Video</li>
-    <li id="" class="articleButton">My 3d Modeling Reel</li>
-    <li id="" class="articleButton">Animation Demo Reel 1</li>
-   
-  </ul>
-  <div>Updated 11/14/2013</div>
-  </br>
-  </br>
-</div> 
-</div>
-  
-  <div id="article2">
+<section id="article2" class="sections">    
       <h3 id="titleArticle2">More moving pictures Matey!!!</h3>
   
-  	<p id="a2InsideText"> This is where you can hear my rants and raves and pretty much general nonsense. I hope to post some news and findings pertaining to some of my latest pursuits. Lately I have been following trends in web/mobile, the Unity engine, games and creative endeavors in general. If I find a kick ass link I'll be posting it here!</p>  		
+  	<p><article class ="pStrong" >This was a movie I made around 8 years ago. I directed, storyboarded, edited and did most of the special 
+effects for it. Worked a little bit on the script, but most of that can be attributed to our producr who worked on this. Over 30 people took 
+part with no budget at all. Logistically, a nightmare. Historically, something none of us who worked on it will ever forget. It took around a 
+year and a half to fully complete, and when it was it was a great relief. (insert smiley face here)</article></p>
   
-  	<footer> <h4 id="authorArticle2">written by Doug Hauger</h4></footer>
-  </div>
+  	 <video controls poster="images/prerollPoster.jpg" id="video" width="auto" height="auto">
+  		<source src="../images/gallery/video-Animation/AnimationDemo2013.mp4" type="video/mp4"></source>
+            <source src="" type="video/webm"></source>
+            <p>Sorry, your browser does not support video
+            	<a href="">Download the Video</a>
+            </p>  
+    </video>
+    	
   
-  <div id="footerbottom">Copyright 2013 Doug Hauger. All Rights Reserved - Coded and built by Doug Hauger</div>
-</div>
+  	<footer> <h4 id="authorArticle2">Created by Doug Hauger</h4></footer>
+</section>
 
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<!--[endif]-->
-<script src="js/respond.min.js"></script>
-<script src="js/pirateInteract.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/jquery-ui-1.10.4.custom.js" type="text/javascript"></script> 
+<div>
+<script src="js/video.js"></script>
 </body>
 </html>
+

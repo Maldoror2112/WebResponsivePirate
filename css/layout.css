@@ -26,9 +26,13 @@ img, object, embed, video {
 li{
 	font-size:inherit;	
 }
-
-<<<<<<< HEAD
-=======
+div .pStrong{
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size: .9em;
+	font-weight:200;
+	color:362008;
+	padding:2%;
+}
 #wrapper{
 	float:left;
 	margin-right: auto;
@@ -36,11 +40,6 @@ li{
 	padding-left: 1.5489%;
 	padding-right: 1.5489%;
 }
-<<<<<<< HEAD
-
->>>>>>> e38a5ec... CSS changes to text and fonts and adding styling to the iamges
-=======
->>>>>>> 59f8a70... Committing all web responsive fixes. Looks good on everything but Safari right now. Got the z-index to work right on Firefox and Chrome.
 .gridContainer {
 	margin-left: auto;
 	margin-right: auto;
@@ -88,17 +87,25 @@ li{
 }
 
 #sidenews_list {	
-	font-size: .9em;
+	font-size: 1.0em;
 }
 
 #article2 {
+	position:relative;
 	clear: both;
-	float: left;
-	margin-left: 0;
 	width: 80%;
 	height:auto;
 	display: inline-block;
-	margin-top:10px;
+	margin-top:3%;
+}
+/*for the jquery call when 2dart, etc loads*/
+.article2 {
+	position:relative;
+	clear: both;
+	width: 80%;
+	height:auto;
+	display: inline-block;
+	margin-top:3%;
 }
 #footer {
 	clear: both;
@@ -116,52 +123,7 @@ li{
 	width: 100%;
 	display: block;
 }
-#pictures{
-	display:inline-flex;
-	position:relative;
-	margin-top:-30%;
-	float:none;
-	width:100%;
-}
-#pictures img{
-	display:block;
-	/*margin-top:-80%;*/
-	/*width:60%;*/
-}
-#pic_descriptions p{
-	/*display:block;*/
-	position:relative;
-	margin-top:3%;
-	font-size: .8em;
-	width:100%;
-}
 
-#buttonsPN {
-	position:absolute;
-	/*display:inline-block;*/
-	/*top:50%;*/
-	margin-top:80%;
-	margin-left:8%;
-}
-
-#prev{
-	position:relative;
-	/*display:inline-block;*/
-	float:left;
-	width:60%;
-	font-size: 1.0em;
-	/*top:-20%;*/
-	/*margin: 0 2% 0 0;*/
-}
-#next{
-	position:absolute;
-	display:inherit;
-	float:right;
-	width:60%;
-	font-size: 1.0em;
-	left:75%;
-	margin: -30% 0% 0 0;
-}
 
 #lepidoptera_pic{
 	display:block;
@@ -173,23 +135,21 @@ li{
 }
 
 
+/* Tablet Layout: 320px to 768px. Inherits styles from: Mobile Layout. */
 
-/* Tablet Layout: 485px to 768px. Inherits styles from: Mobile Layout. */
-
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 360px) {
 li{
 	font-size:inherit;
 	
 }
-<<<<<<< HEAD
-=======
-
-/*#wrapper{
+div .pStrong{
+	font-size: 1.2em;
+}
+#wrapper{
 	width: 91.4836%;
 	padding-left: 0.7581%;
 	padding-right: 2.7581%;
-}*/
->>>>>>> e38a5ec... CSS changes to text and fonts and adding styling to the iamges
+}
 .gridContainer {
 	width: 91.4836%;
 	padding-left: 0.7581%;
@@ -242,52 +202,7 @@ li{
 	display: block;
 }
 
-#pictures{
-	display:inline-flex;
-	position:relative;
-	margin-top:-30%;
-	float:none;
-	width:100%;
-}
-#pictures img{
-	display:block;
-	/*margin-top:-80%;*/
-	/*width:60%;*/
-}
-#pic_descriptions p{
-	/*display:block;*/
-	position:relative;
-	margin-top:3%;
-	font-size: .8em;
-	width:100%;
-}
 
-#buttonsPN {
-	position:absolute;
-	/*display:inline-block;*/
-	/*top:50%;*/
-	margin-top:80%;
-	margin-left:12%;
-}
-
-#prev{
-	position:relative;
-	/*display:inline-block;*/
-	float:left;
-	width:60%;
-	font-size: 1.0em;
-	/*top:-20%;*/
-	/*margin: 0 2% 0 0;*/
-}
-#next{
-	position:absolute;
-	display:inherit;
-	float:right;
-	width:60%;
-	font-size: 1.0em;
-	left:100%;
-	margin: -30% 0% 0 0;
-}
 
 
 #lepidoptera_pic{
@@ -303,14 +218,13 @@ li{
 li{
 	font-size:larger;	
 }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-/*#wrapper{
-=======
+div .pStrong{
+	font-size: 1.5em;		
+}
+div article.pStrong{
+	font-size: 1.2em;		
+}
 #wrapper{
->>>>>>> 659e708... Latest 2d portfolio working with AJAX methods
 	width: 95.0217%;
 	max-width: 800px;
 	padding-left: 0.4891%;
@@ -318,7 +232,6 @@ li{
 	margin: auto;
 }
 
->>>>>>> e38a5ec... CSS changes to text and fonts and adding styling to the iamges
 .gridContainer {
 	width: 89.0217%;
 	max-width: 1000px;
@@ -353,10 +266,13 @@ li{
 	float: right;
 	margin-left: .1989%;
 	margin-right:.1989%;
-	margin-top:-10%;
+	margin-top:-3%;
 	width: 32.6007%;
 	display: block;
 	padding-left:50px;
+}
+#sidenews_list {	
+	font-size: 1.2em;
 }
 #article2 {
 	clear: both;
@@ -382,55 +298,7 @@ li{
 	display: block;
 }
 
-#pictures img{
-	/*position:relative;*/
-	/*display:inline-block;*/
-	float:left;
-	width:50%;
-	margin-top:0;
-}
-#pic_descriptions p{
-	position:relative;
-	float:right;
-	width:40%;
-	margin-top:-23%;
-	font-size: 1.2em;
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
-#buttonsPN{
-	display:inline-flex;
-	position:static;
-	top: 280px;
-	left:60px;
-	/*clear:both;	*/  
-	float:none; 
-	padding:none;
-	margin:15% 0 0 8%;	
-}
-
-#prev{	
-	  clear:both;	  
-	  float:left; 
-	  position:relative;
-	  padding:none;
-	  display:inline-block;
-	  text-align:center;
-	  border:#3A1902 solid 1px;
-	  border-radius:5px;
-	  }
-	  
-	#next{
-		  clear:both;	
-		  position:relative;
-		  top:-4px;
-		  padding:none;
-		  float:right;
-		  display:inline-block;
-		 text-align:center;
-		 border:#3A1902 solid 1px;
-	     border-radius:5px; 
-	  }
 	
 #lepidoptera_pic{
 	width:80%;

@@ -35,6 +35,7 @@ a:hover{color:#E70E23; text-decoration:none;}
 	display:list-item;
 	list-style:none;
 	padding: .5em 0 .5em 0;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 }
 #article1-land{
 	position:relative;
@@ -128,6 +129,7 @@ footer{
 #sidelist{
 	margin:0px 0px 0px 0px;
 	padding:0px 0px 90px -20px;
+	
 }
 	
 #nav #news-btn{
@@ -183,7 +185,7 @@ footer{
 #nav #video-btn:active{
 	background-position:center;
 }
-
+/* Nav buttons!!!!!*/
 #news-default{
 	display:block;
 	float:left;
@@ -211,17 +213,7 @@ footer{
 	text-indent: -9999px;
 	margin:1% 0% 6% 3%;
 }
-
-/*#header{
-	display:inline-block;
-	margin-top: 0%;
-	float: left;
-	z-index: 1;
-	left: 57px;
-	width: 159px;
-	height: 155px;
-	}*/
-
+/*End of Nav Buttons!!!*/
 #article1{
 	padding:10px;
 	text-align:left;
@@ -231,9 +223,14 @@ footer{
 	background-repeat:no-repeat;
 	border:thin #633;
 	}
+#article1 img{
+		position:relative;
+		float: left;
+		padding:0 5% 5% 5%;
+	}
 #article1 p{
 	padding: 0 2% 0 2%;
-	}
+}
 #footerbottom{
 	text-align:center;
 	color:#FFF;
@@ -242,7 +239,6 @@ footer{
 
 #article2{
 	background-image:url(../images/oldpaper2.png);
-	/*z-index:0;*/
 	padding:30px;
 	text-align:left;
 	background-size:contain;
@@ -258,98 +254,9 @@ footer{
 	 padding:0px 0px 0px 0px;
 }
 
-#listP1{
-	
-}
-
-#lepidoptera_pic{
-	width:18%;
-	float:left;
-	/*display:inline-block;
-	position:relative;*/
-	padding:8px;
-}
-
-#article1Lepidoptera{
-	float:right;
-	display:inline-block;
-	postion:relative;
-	padding:20px;
-	margin-top:-28%;
-	margin-left:90px;
-	right:500px;
-	/*top:-420px;*/
-}
-
 #content{ }
   #content h1 { font-size: 2.4em; font-weight: normal; line-height: 32px; margin: 30px 0 50px 0; }
   #content p { font-size: 1.4em; line-height: 22px; margin-bottom: 20px; }
   
  
- /* relevant for portfolio images- start */
-  #gallery{ 
-    display:block;
-    clear:both;
-	height:auto;
-	width:auto;
-	padding:0px;
-	position: relative;
-  }
-  
-  #pictures{
-	 position:relative; 
-}
-  .drag_pic img{ 
-	clear:both;
-	/*position: relative;*/
-	/*position: fixed;*/
-	position:absolute; 
-	display:block;
-	margin-right:100px;
-	top: 0; 
-	left: 0; 
-	}
 
-#buttonsPN{
-	display:inline-block;
-	clear:both;	  
-	float:left; 
-	position:relative;	
-	padding:0px;
-	/*margin:15% 0 0 8%;	*/
-}
-    
-    #prev{	
-	  clear:both;	  
-	  float:left; 
-	  position:relative;
-	  padding:0px;
-	  display:inline-block;
-	  text-align:center;
-	  border:#3A1902 solid 1px;
-	  border-radius:5px;
-	  }
-	  
-	#next{
-		  clear:both;	
-		  position:relative;
-		  float:right;
-		  display:inline-block;
-		 text-align:center;
-		 border:#3A1902 solid 1px;
-	     border-radius:5px; 
-	  }
-	  
-.pic_descr{
-		display:none;
-		clear:both;
-		position:relative;
-		padding:0px;
-		margin-top:3%;
-		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-		float:right;
-		right:1%;
-}
-
-  /* relevant for portfolio images - end */
-  
