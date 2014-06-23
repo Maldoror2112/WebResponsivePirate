@@ -136,6 +136,8 @@ figure.drag_pic{
 
 #pic_descriptions p{
 	position:relative;
+	/*margin-top:20px;*/
+	padding-top:3%;	
 	float:right;
 	font-size: 1.5em;
 	width:40%;

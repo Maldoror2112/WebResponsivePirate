@@ -55,7 +55,7 @@ figure.ui_pic{
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 700px) {
 #article2{
 	background-image: none;
 }

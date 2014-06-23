@@ -168,21 +168,21 @@ footer{
 	background-position:center;
 }
 
-#nav #video-btn{
+#nav #contact-btn{
 	display:block;
 	float:left;
 	position:inherit;	
 	width: 70px; height:55px;
-	background-image:url(../images/video2Btn.png);	
+	background-image:url(../images/contact2Btn.png);		
 	text-indent: -9999px;
 	margin:1% 0% 6% 3%;
 }
 
-#nav #video-btn:hover{
+#nav #contact-btn:hover{
 	background-position:bottom;
    }
    
-#nav #video-btn:active{
+#nav #contact-btn:active{
 	background-position:center;
 }
 /* Nav buttons!!!!!*/
@@ -204,12 +204,12 @@ footer{
 	text-indent: -9999px;
 	margin:1% 0% 6% 3%;
 }
-#video-default{
+#contact-default{
 	display:block;
 	float:left;
 	position:inherit;	
 	width: 70px; height:55px;
-    background-image:url(../images/videoOnly.png);
+    background-image:url(../images/contactOnly.png);
 	text-indent: -9999px;
 	margin:1% 0% 6% 3%;
 }
