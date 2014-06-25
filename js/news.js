@@ -9,7 +9,7 @@ $(document).ready(function(){
 		var href = $(this).attr('href');	
 		
 		$("#article1").fadeOut('1000').html(ajax_load).load(href + '#article1 p').fadeIn('1000');
-		$("#article2").fadeOut('1000').html(ajax_load).load(href + '#article2 #news_section article').fadeIn('1000');
+		$("#article2").fadeOut('1000').html(ajax_load).load(href + '#article2 #news_section article').css('background-image', 'none').fadeIn('1000');
 		/*$("#article2").fadeOut('1000').html(ajax_load).load(href + '#section p').fadeIn('1000');*/
 		/*$("#article2").load(href + '#section').append(href + "#section");*/
 		
