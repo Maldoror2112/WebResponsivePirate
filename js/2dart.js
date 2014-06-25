@@ -7,7 +7,7 @@ $(document).ready(function(){
 		
 		var href = $(this).attr('href');	
 		
-		$("#article2").html(ajax_load).load(href).fadeIn(5000);
+		$("#article2").html(ajax_load).load(href).fadeIn('1000');
 					
 		return false;
 	});
