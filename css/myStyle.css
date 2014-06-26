@@ -239,7 +239,6 @@ footer{
 
 #article2{
 	background-image:url(../images/oldpaper2.png);
-	padding:30px;
 	text-align:left;
 	background-size:contain;
 	background-size:100% 100%;
@@ -247,12 +246,7 @@ footer{
 	border:thin #633;
 }
 
-#skull{
-	 clear: both;
-	 position:relative;
-	 top:-20px;
-	 padding:0px 0px 0px 0px;
-}
+
 
 #content{ }
   #content h1 { font-size: 2.4em; font-weight: normal; line-height: 32px; margin: 30px 0 50px 0; }

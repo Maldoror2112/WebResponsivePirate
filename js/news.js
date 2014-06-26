@@ -1,7 +1,7 @@
 // JavaScript Document
 $(document).ready(function(){
 	
-	$('#article1-land').fadeOut(700);
+	$('#article1-land').remove();
 
 	$("#sidenews_list").on('click', 'a', function(e){
 		/*e.preventDefault();*/

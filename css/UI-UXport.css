@@ -37,6 +37,7 @@ figure.ui_pic{
 	background-image: none;
 }
 section{
+	position:relative;
 	left:0%;
 	background-image:url(../images/oldpaper2.png);
 	background-repeat:no-repeat;
@@ -80,6 +81,16 @@ section{
 	position:relative;
 	top: -10%;	
 	padding:3%;
+}
+section{
+	position:relative;
+	left:3%;
+	background-image:url(../images/oldpaper2.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-size:100% 100%;	
+	height:auto;
+	padding: 3%;
 }
 section1{
 	padding:2%;

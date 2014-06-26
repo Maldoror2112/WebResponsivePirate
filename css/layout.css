@@ -71,11 +71,21 @@ div .pStrong{
 #article1 {
 	clear: both;
 	float: none;
+	position:absolute;
 	font-size: .8em;
 	width: 93%;
 	display: inline-block;
-	margin-top:10px;
+	top:104%;
+	right:1%;
+	/*margin:135% 0% 0 0%;*/
 }
+#skull{
+	 clear: both;
+	 position:relative;
+	 top:12%;
+	 right:-1%;
+	 padding:0px 0px 0px 0px;
+}	
 #sidenews {
 	clear: both;
 	position:relative;
@@ -92,21 +102,13 @@ div .pStrong{
 
 #article2 {
 	position:relative;
+	width:100%;
 	clear: both;
-	width: 80%;
 	height:auto;
 	display: inline-block;
-	margin-top:3%;
+	margin:115% 3% 0 0;
 }
-/*for the jquery call when 2dart, etc loads*/
-.article2 {
-	position:relative;
-	clear: both;
-	width: 80%;
-	height:auto;
-	display: inline-block;
-	margin-top:3%;
-}
+
 #footer {
 	clear: both;
 	float: left;
@@ -124,7 +126,6 @@ div .pStrong{
 	display: block;
 }
 
-
 #lepidoptera_pic{
 	display:block;
 	position:absolute;
@@ -133,14 +134,28 @@ div .pStrong{
 	width:20%;
 	margin:0 5%;
 }
-
+article.newsStrong{
+	clear: both;
+	float: none;
+	position:relative;
+	right:2.5%;
+	background-image:url(../images/oldpaper2.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-size:100% 100%;
+	width:100%;	
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size: .9em;
+	font-weight:200;
+	color:362008;
+	padding:4%;
+}
 
 /* Tablet Layout: 320px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 360px) {
 li{
-	font-size:inherit;
-	
+	font-size:inherit;	
 }
 div .pStrong{
 	font-size: 1.2em;
@@ -165,28 +180,43 @@ div .pStrong{
 	margin-top:0%;
 }
 #article1 {
+	position:relative;
 	clear: both;
 	float: left;
 	margin-left: 0;
-	width: 35%;
-	display: inline-block;
+	width: 42%;
+	display:inline-block;
 }
 #sidenews {
+	position:relative;
 	clear: none;
 	float: right;
-	margin-left: 1.6574%;
+	/*margin-left: 1.6574%;*/
 	width: 50%;
-	display: block;
+	display: inline-block;
+}
+#skull{
+	 clear: both;
+	 position:relative;
+	 top:12%;
+	 right:0%;
+	 padding:0px 0px 0px 0px;
 }
 #article2 {
+	position:relative;
 	clear: both;
 	float: left;
-	margin-right: 0%;
-	width: 95%;
+	margin:0% 5% 0 0;
+	width: 90%;
 	height:auto;
 	min-height:40px;
 	display: block;
 }
+/*article.newsStrong{
+	position:relative;
+	width:95%;
+	margin: 0 5% 0 0;
+}*/
 #footer {
 	clear: both;
 	float: left;
@@ -202,19 +232,26 @@ div .pStrong{
 	display: block;
 }
 
-
-
-
 #lepidoptera_pic{
 	width:30%;
 }
-
-
+article.newsStrong{
+	clear: both;
+	float: none;
+	position:relative;
+	right:-2%;
+	background-image:url(../images/oldpaper2.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-size:100% 100%;
+	padding: 3%;
+	width:100%;	
+}
 }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 767px) {
 li{
 	font-size:larger;	
 }
@@ -261,6 +298,13 @@ div article.pStrong{
 	width: 53.8754%;
 	display: inline-block;
 }
+#skull{
+	 clear: both;
+	 position:relative;
+	 top:12%;
+	 right:3%;
+	 padding:0px 0px 0px 0px;
+}
 #sidenews {
 	clear: none;
 	float: right;
@@ -269,7 +313,7 @@ div article.pStrong{
 	margin-top:-3%;
 	width: 32.6007%;
 	display: block;
-	padding-left:50px;
+	padding-left:25px;
 }
 #sidenews_list {	
 	font-size: 1.2em;
@@ -297,11 +341,21 @@ div article.pStrong{
 	width: 100%;
 	display: block;
 }
-
-
 	
 #lepidoptera_pic{
 	width:80%;
 }
-
+article.newsStrong{
+	clear: both;
+	float: none;
+	position:relative;
+	right:2%;
+	background-image:url(../images/oldpaper2.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-size:100% 100%;
+	padding: 3%;
+	width:98%;
+	font-size: 1.2em;
+}
 }
