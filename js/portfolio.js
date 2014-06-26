@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var windowWidth = $(window).width();
 	var ajax_load = "<img src='images/fancybox/fancybox_loading@2x.gif' alt='loading...' />"
 	
-	$('#article1-land').remove(700);
+	$('#article1-land').remove();
 	
 	$("#sidenews_list").on('click', 'a', function(e){
 		e.preventDefault();
