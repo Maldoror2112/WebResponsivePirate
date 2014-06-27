@@ -70,14 +70,16 @@ div .pStrong{
 }
 #article1 {
 	clear: both;
-	float: none;
-	position:absolute;
-	font-size: .8em;
-	width: 93%;
-	display: inline-block;
-	top:104%;
-	right:1%;
-	/*margin:135% 0% 0 0%;*/
+	float: right;
+	position:relative;
+	font-weight:200;
+	color:362008;
+	padding:4%;
+	width: 99%;
+	height:100%;
+	display:list-item;
+	margin:120% 0% 0 0%;
+	left:2.5%;
 }
 #skull{
 	 clear: both;
@@ -88,9 +90,11 @@ div .pStrong{
 }	
 #sidenews {
 	clear: both;
-	position:relative;
-	margin:0 3% 0 0;
-	width: 95%;
+	float:left;
+	position:absolute;
+	margin:22% 6% 0 0;
+	right:-6%;
+	width: 100%;
 	display: inline-block;
 	padding:0px;
 	padding-right:1.3707%;
@@ -106,7 +110,7 @@ div .pStrong{
 	clear: both;
 	height:auto;
 	display: inline-block;
-	margin:115% 3% 0 0;
+	margin:5% 3% 0 0;
 }
 
 #footer {
@@ -186,6 +190,7 @@ div .pStrong{
 	margin-left: 0;
 	width: 42%;
 	display:inline-block;
+	margin:0% 0% 0 0%;
 }
 #sidenews {
 	position:relative;

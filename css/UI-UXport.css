@@ -6,9 +6,15 @@
 #article2{
 	background-image: none;
 }
+#sidenews{
+	position:absolute;
+	right:-1%;
+	top:17%;
+	margin-bottom:-50%;
+}
 section{
 	position:relative;
-	left:-20%;
+	left:-4%;	
 	background-image:url(../images/oldpaper2.png);
 	background-repeat:no-repeat;
 	background-size:contain;
@@ -45,6 +51,7 @@ section{
 	background-size:100% 100%;	
 	height:auto;
 	padding: 3%;
+	width:100%;
 }
 figure.ui_pic{
 	position:absolute;
@@ -72,25 +79,23 @@ figure.ui_pic{
 section{
 	left: -2%;
 }
-.sections img{
+.UIsections img{
 	position:relative;
 	float:left;
-	padding:0 2%;
+	padding:2% 2%;
 }
-.sections{
-	position:relative;
-	top: -10%;	
-	padding:3%;
-}
+
 section{
 	position:relative;
-	left:3%;
+	left:2%;
+	margin: 0 8% 0 0;
 	background-image:url(../images/oldpaper2.png);
 	background-repeat:no-repeat;
 	background-size:contain;
-	background-size:100% 100%;	
+	background-size:100% 100%;
+	width:94%;	
 	height:auto;
-	padding: 3%;
+	padding: 5%;
 }
 section1{
 	padding:2%;
