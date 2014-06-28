@@ -75,8 +75,8 @@ div .pStrong{
 	font-weight:200;
 	color:362008;
 	padding:4%;
-	width: 99%;
-	height:100%;
+	width: auto;
+	height:98%;
 	display:list-item;
 	margin:120% 0% 0 0%;
 	left:2.5%;
@@ -138,6 +138,15 @@ div .pStrong{
 	width:20%;
 	margin:0 5%;
 }
+#pictures{
+	position:relative;
+	margin: 0 0 0 15%;
+}
+#pic_descriptions{
+	position:relative;
+	margin: 0 0 0 -10%;
+	padding:5%;
+}
 article.newsStrong{
 	clear: both;
 	float: none;
@@ -188,7 +197,7 @@ div .pStrong{
 	clear: both;
 	float: left;
 	margin-left: 0;
-	width: 42%;
+	width: 43%;
 	display:inline-block;
 	margin:0% 0% 0 0%;
 }
@@ -196,8 +205,9 @@ div .pStrong{
 	position:relative;
 	clear: none;
 	float: right;
+	margin:-7% 3% 0 0;
 	/*margin-left: 1.6574%;*/
-	width: 50%;
+	width: 45%;
 	display: inline-block;
 }
 #skull{
@@ -211,8 +221,8 @@ div .pStrong{
 	position:relative;
 	clear: both;
 	float: left;
-	margin:0% 5% 0 0;
-	width: 90%;
+	margin:0% 0% 0 0;
+	width: 100%;
 	height:auto;
 	min-height:40px;
 	display: block;
@@ -349,6 +359,15 @@ div article.pStrong{
 	
 #lepidoptera_pic{
 	width:80%;
+}
+#pictures{
+	position:relative;
+	margin: 0 5% 0 0%;
+}
+#pic_descriptions{
+	position:relative;
+	margin: -16% 0 0 0%;
+	padding:5%;
 }
 article.newsStrong{
 	clear: both;

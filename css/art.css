@@ -30,15 +30,15 @@ figure.drag_pic{
 #pic_descriptions p{
 	position:relative;
 	margin-top:5%;
-	font-size: .8em;
 	width:100%;
 }
 section #buttonsPN{
+	position:relative;
 	display:inline-block;
 	position:static;
 	float:none; 
 	padding:none;
-	margin:95% 0 5% 5%;	
+	margin:80% 0 0% 0%;	
 }
 
  #prev{	

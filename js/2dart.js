@@ -4,8 +4,8 @@ $(document).ready(function(){
 	$("#sidenews_list").on('click', 'a', function(e){
 		e.preventDefault();
 		var ajax_load = "<img src='..images/fancybox/fancybox_loading@2x.gif' alt='loading...' />"
+		var href = $(this).attr('href');
 		
-		var href = $(this).attr('href');	
 		
 		$("#article2").html(ajax_load).load(href).fadeIn('1000');
 					
