@@ -44,8 +44,22 @@ figure.ui_pic{
 }
 #backtotop{
 	position:relative;
-	display:block;
+	margin:10% 0 0 23%;	
 }
+#backtotop a{
+	font-family: 'Yellowtail', cursive;
+	font-size:1.4em;
+	position:relative;
+	display:inline-block;	
+	/*width:150px;
+	height:116;*/
+	background-image:url(../images/backboard.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	text-align:center;
+	padding:5%;	
+}
+
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
