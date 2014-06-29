@@ -169,7 +169,7 @@ article.newsStrong{
 
 /* Tablet Layout: 320px to 768px. Inherits styles from: Mobile Layout. */
 
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 28.75em) {
 li{
 	font-size:inherit;	
 }
@@ -269,7 +269,7 @@ article.newsStrong{
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 40.5em) {
 #article1-land {
 	clear: both;
 	float: none;
