@@ -35,21 +35,21 @@ figure.ui_pic{
 }
 #gallery{
 	clear:both;
-	position:absolute;
+	position:relative;
 	display:block;
 	width:95%;
 	right:16.5%;
 	margin:0 0% 0 0%;
 	padding:0 0 0 0;
 }
-/*#to-top:{
-	position:absolute;
+#backtotop{
+	position:relative;
 	display:block;
-	top:-40%;
-}*/
+}
+
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 28.75) {
 	#article1{
 	display:inline-block;
 }
@@ -77,7 +77,7 @@ figure.ui_pic{
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 40.5em) {
 #article2{
 	background-image: none;
 }
