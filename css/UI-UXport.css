@@ -6,12 +6,12 @@
 #article2{
 	background-image: none;
 }
-#sidenews{
+/*#sidenews{
 	position:absolute;
 	right:-1%;
 	top:17%;
 	margin-bottom:-50%;
-}
+}*/
 section{
 	position:relative;
 	left:-4%;	
@@ -33,6 +33,20 @@ figure.ui_pic{
 	left:-8%;
 	width:100%;
 }
+#gallery{
+	clear:both;
+	position:absolute;
+	display:block;
+	width:95%;
+	right:16.5%;
+	margin:0 0% 0 0%;
+	padding:0 0 0 0;
+}
+/*#to-top:{
+	position:absolute;
+	display:block;
+	top:-40%;
+}*/
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
