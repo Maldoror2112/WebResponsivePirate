@@ -24,7 +24,8 @@ img, object, embed, video {
 
 /* Mobile Layout: 480px and below. */
 li{
-	font-size:inherit;	
+	font-size:inherit;
+	padding-top:3%;	
 }
 div .pStrong{
 	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
@@ -58,16 +59,18 @@ div .pStrong{
 #article1-land {
 	clear: both;
 	float: none;
-	font-size: .8em;
-	width: auto;
-	height:80%;
+	font-size: 1.1em;
+	width: 95%;
+	height:auto;
 	display: inline-block;
-	position:absolute;
-	top:10%;
+	position:relative;
+	top:20%;
+	left:1%;
 }
 #landingText{
 	font-size:1.0em;	
 }
+
 #article1 {
 	clear: both;
 	float: right;
@@ -75,11 +78,11 @@ div .pStrong{
 	font-weight:200;
 	color:362008;
 	padding:4%;
-	width: auto;
-	height:98%;
+	width: 98%;
+	height:auto;
 	display:list-item;
-	margin:120% 0% 0 0%;
-	left:2.5%;
+	margin:124% 0% 0 0%;
+	left:2.0%;
 }
 #skull{
 	 clear: both;
@@ -267,6 +270,17 @@ article.newsStrong{
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
 @media only screen and (min-width: 767px) {
+#article1-land {
+	clear: both;
+	float: none;
+	position:relative;
+	margin:0 auto;
+	font-size: .8em;
+	width: 90%;
+	height:auto;
+	display: inline-block;	
+	top:10%;
+}
 li{
 	font-size:larger;	
 }
