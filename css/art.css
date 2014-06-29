@@ -34,19 +34,20 @@ figure.drag_pic{
 }
 section #buttonsPN{
 	position:relative;
-	display:inline-block;
+	display:block;
 	position:static;
 	float:none; 
 	padding:none;
-	margin:80% 0 0% 0%;	
+	margin:70% 0 0% 0%;	
 }
 
  #prev{	
 	  /*clear:both;*/	  
-	  float:left; 
 	  position:relative;
+	  float:left;
 	   /*margin: 0 22% 0 0%;*/
-	  display:inline-block;
+	  display:block;
+	  margin:0 2%;
 	  text-align:center;
 	  border:#3A1902 solid 1px;
 	  border-radius:5px;
@@ -56,9 +57,10 @@ section #buttonsPN{
 #next{
 		  /*clear:both;*/	
 		 position:relative;
-		 float:right;
-		 display:inline-block;
-		 margin: -1.2% 0 0 -5%;
+		 float:left;
+		 display:block;
+		 margin:0 2%;
+		 /*margin: -1.2% 0 0 -5%;*/
 		 text-align:center;
 		 border:#3A1902 solid 1px;
 	     border-radius:5px;
