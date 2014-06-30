@@ -5,11 +5,19 @@
 /* CSS Document */
 
 
-#pictures img{
+/*#pictures img{
 	clear:both;
-	position:absolute; 
+	position:relative; 
 	display:inline-block;
 	width:98%;
+}*/
+figure.drag_pic{
+	position:absolute;
+	display:block;
+	width:100%;
+	top:-8%;
+	right:10%;
+	margin: -75% 0% 0% 0%;
 }
 /* IMPORTANT! THis hides the rest of the pic desscription text. We resize the font in the media queries */	 
 aside .pic_descr{
@@ -19,15 +27,6 @@ aside .pic_descr{
 aside #first_descr{
 	display:inline-block;
 }
-figure.drag_pic{
-	position:absolute;
-	display:block;
-	width:100%;
-	top:-8%;
-	right:10%;
-	margin: -75% 0% 0% 0%;
-}
-
 #pic_descriptions p{
 	position:relative;
 	margin-top:5%;
@@ -42,8 +41,7 @@ section #buttonsPN{
 	margin:90% 0 0% 0%;	
 }
 
- #prev{	
-	  /*clear:both;*/	  
+ #prev, #next{	
 	  position:inherit;
 	  float:left;
 	   /*margin: 0 22% 0 0%;*/
@@ -56,19 +54,18 @@ section #buttonsPN{
 	  min-height:50px;
 	  }
 
-#next{
-		  /*clear:both;*/	
+/*#next{	 	
 		 position:inherit;
 		 float:left;
 		 display:block;
 		 margin:0 2%;
-		 /*margin: -1.2% 0 0 -5%;*/
+		 margin: -1.2% 0 0 -5%;
 		 text-align:center;
 		 border:#3A1902 solid 1px;
 	     border-radius:5px;
 		 min-width:70px; 
 		 min-height:50px;
-	  }
+	  }*/
 
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
