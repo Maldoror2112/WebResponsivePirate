@@ -1,106 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
 
-@charset "utf-8";
-/* CSS Document */
 
 
-/*#pictures img{
-	clear:both;
-	position:relative; 
-	display:inline-block;
-	width:98%;
-}*/
-figure.drag_pic{
-	position:absolute;
-	display:block;
-	width:100%;
-	top:-8%;
-	right:10%;
-	margin: -75% 0% 0% 0%;
-}
-/* IMPORTANT! THis hides the rest of the pic desscription text. We resize the font in the media queries */	 
-aside .pic_descr{
-    display:none;
-	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;		
-}
-aside #first_descr{
-	display:inline-block;
-}
-#pic_descriptions p{
-	position:relative;
-	margin-top:5%;
-	width:100%;
-}
-section #buttonsPN{
-	position:absolute;
-	display:block;
-	position:static;
-	float:none; 
-	padding:none;
-	margin:90% 0 0% 0%;	
-}
-
- #prev, #next{	
-	  position:inherit;
-	  float:left;
-	   /*margin: 0 22% 0 0%;*/
-	  display:block;
-	  margin:0 2%;
-	  text-align:center;
-	  border:#3A1902 solid 1px;
-	  border-radius:5px;
-	  min-width:70px; 
-	  min-height:50px;
-	  }
-
-/*#next{	 	
-		 position:inherit;
-		 float:left;
-		 display:block;
-		 margin:0 2%;
+/*#next{
+		  clear:both;	
+		 position:relative;
+		 float:right;
+		 display:inline-block;
 		 margin: -1.2% 0 0 -5%;
 		 text-align:center;
 		 border:#3A1902 solid 1px;
 	     border-radius:5px;
-		 min-width:70px; 
-		 min-height:50px;
-	  }*/
+		 width:40%; 
+	  }
+*/
+
+/* Tablet Layout: 461px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 28.75) {
 
 
-/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
-
-@media only screen and (min-width: 28.75em) {
-
-/*#pic_descriptions p{
-	display:block;
-	position:relative;
-	margin-top:3%;
-	font-size: .8em;
-	width:100%;
-}*/
-figure.drag_pic{
-	position:absolute;
-	display:block;
-	left:8%;
-	width:60%;
-}
-#pic_descriptions p{
-	position:relative;
-	float:right;
-	margin-top:-65%;
-	padding:0%;
-	font-size: 1.0em;
-	width:40%;
-}
-section #buttonsPN{
-	display:inline-block;
-	position:static;
-	float:none; 
-	padding:none;
-	margin:50% 0 5% 5%;	
-}
- #prev{	
+ /*#prev{	
 	  clear:both;	  
 	  float:left; 
 	  position:inherit;
@@ -110,43 +31,27 @@ section #buttonsPN{
 	  text-align:center;
 	  border:#3A1902 solid 1px;
 	  border-radius:5px;
-	  }
+	  }*/
 
 #next{
-		 position:absolute;
-		 text-align:center;
+		  /*clear:both;	*/
+		 /* position:absolute;*/
+		  /*display:inline-block;*/
+		  /*float:right;*/
+		  /*left: 20%;*/
+		 /* padding:1% 1% 1% 1%;*/		 
+		/* text-align:center;
 		 border:#3A1902 solid 1px;
 	     border-radius:5px;
-		 width:10%;		
+		 width:10%;*/		
  }
 
 }
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 40.5em) {
-figure.drag_pic{
-	position:absolute;
-	display:block;
-	left:6%;
-	width:60%;
-}
 
-#pic_descriptions p{
-	position:relative;
-	/*margin-top:20px;*/
-	padding-top:3%;	
-	float:right;
-	font-size: 1.5em;
-	width:40%;
-}
-section #buttonsPN{
-	display:inline-flex;
-	position:static;
-	float:none; 
-	padding:none;
-	/*margin:45% 0 0 8%;*/	
-}
 
- #prev{	
+/* #prev{	
 	  clear:both;	  
 	  float:left; 
 	  position:inherit;
@@ -156,9 +61,9 @@ section #buttonsPN{
 	  text-align:center;
 	  border:#3A1902 solid 1px;
 	  border-radius:5px;
-	  }
+	  }*/
 
-#next{
+/*#next{
 		  clear:both;	
 		  position:inherit;
 		  float:right;
@@ -168,7 +73,7 @@ section #buttonsPN{
 		 border:#3A1902 solid 1px;
 	     border-radius:5px;
 		  width:50%; 
-}
+}*/
 
 }
 

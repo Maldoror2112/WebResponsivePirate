@@ -11,7 +11,7 @@ $(document).ready(function(){
 		var href = $(this).attr('href');	
 		
 		$("#article2").hide(700).html(ajax_load).load(href).fadeIn('1000', function(){
-			if(windowWidth <= 590){
+			if(windowWidth <= 735){
 		     $("#article1").fadeOut(700);
 			 $("#sidenews").fadeOut(700);
 		   }	

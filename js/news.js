@@ -9,11 +9,12 @@ $(document).ready(function(){
 		var href = $(this).attr('href');	
 		
 		$("#article1").fadeOut('1000').html(ajax_load).load(href + '#article1 p').fadeIn('1000', function(){
-			if($(window).width() <= 360){
+			if($(window).width() <= 735){
 			  $("#sidenews").fadeOut(700).remove();
 			  $("#article1").css({"position": "relative", "top": "-350px"});
 			  $("#article2").css({"position": "relative", "top": "-350px"});
-			  $("#footerbottom").css({"position": "relative", "top": "-350px"});
+			  $("#backtotop").css({"position": "relative", "top": "-20px"});
+			  $("#footerbottom").css({"position": "relative", "top": "-360px"});
 			 /* $("#article1").addClass("news-article");*/
 		  }		
 		

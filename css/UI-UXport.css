@@ -6,12 +6,6 @@
 #article2{
 	background-image: none;
 }
-/*#sidenews{
-	position:absolute;
-	right:-1%;
-	top:17%;
-	margin-bottom:-50%;
-}*/
 section{
 	position:relative;
 	left:-4%;	
@@ -28,95 +22,163 @@ section{
 	margin-top:-10%;	
 }
 figure.ui_pic{
-	position:relative;
+	position:absolute;
 	display:block;
-	margin: 0 1% 0 0;
-	/*left:-8%;*/
-	min-width:320px;
-	height:auto;
+	left:-8%;
+	width:100%;
 }
-#gallery{
-	clear:both;
+
+main #gallery{
 	position:relative;
-	display:block;
-	width:99%;
-	right:15.0%;
-	margin:0 0% 0 0%;
-	padding:0 0 0 0;
+}
+section #buttonsPN{
+	position:relative;
+	display:inline-block;
+	position:static;
+	float:none; 
+	padding:none;
+	margin:80% 0 0% 10%;	
+}
+#prev, #next{	
+	  float:left; 
+	  position:relative;	   
+	  /*display:inline-block;*/
+	  text-align:center;
+	  border:#3A1902 solid 1px;
+	  border-radius:5px;
+	  width:40%;
+	  height:auto;
+	  }
+#prev{
+	margin: 0 7% 0 0%;
 }
 #backtotop{
 	position:relative;
-	margin:10% 0 0 29%;	
+	margin:10% 0 0 27%;	
+	top:30%;
 }
 #backtotop a{
 	font-family: 'Yellowtail', cursive;
 	font-size:1.4em;
-	position:relative;
+	position:relative;	
 	display:inline-block;	
 	background-image:url(../images/backboard.png);
 	background-repeat:no-repeat;
 	background-size:100% 100%;
 	text-align:center;
-	padding:5%;	
+	padding:2%;	
 }
 
-/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. IPad in portrait mode, Samsung in landscape*/
 
-@media only screen and (min-width: 28.75) {
+@media only screen and (min-width: 22.5em) {
 	#article1{
-	display:inline-block;
+	display:block;
 }
 #article2{
 	background-image: none;
+	position:relative;
+	right:-2%;
+	
+}
+main #gallery{
+	position:relative;
+	margin-top:8%;
+}
+section figure.ui_pic{
+	position:absolute;
+	display:inline-block;
+	float:none;
+	left:-26%;
+	width:70%;
 }
 section{
 	position:relative;
-	left:0%;
+	right:-2%;
 	background-image:url(../images/oldpaper2.png);
 	background-repeat:no-repeat;
 	background-size:contain;
 	background-size:100% 100%;	
 	height:auto;
 	padding: 3%;
-	width:100%;
+	width:98%;
 }
-figure.ui_pic{
+/*figure.ui_pic{
 	position:absolute;
 	display:block;
-	left:8%;
+	left:-6%;
 	width:60%;
-}
+}*/
+#pic_descriptions p{
+	float:right;
+	position:relative;
+	width: 35%;
+	padding: 0 3% 0 3%;
+	left:5%;
+	margin-top:-60%;
 }
 
-/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+section #buttonsPN{
+	display:inline-block;
+	position:static;
+	float:none; 
+	padding:none;
+	margin:60% 0 5% 20%;
+}
 
-@media only screen and (min-width: 40.5em) {
+#backtotop{
+	position:relative;
+	left:10%;
+}
+/*#backtotop a{
+	font-family: 'Yellowtail', cursive;
+	font-size:1.4em;
+	position:relative;	
+	display:inline-block;	
+	background-image:url(../images/backboard.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	text-align:center;
+	padding:5%;	
+}*/
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. Ipad in landscape, desktop*/
+
+@media only screen and (min-width: 48em) {
 #article2{
 	background-image: none;
 }
 #article1{
 	display:inline-block;
 }
-figure.ui_pic{
+section figure.ui_pic{
 	position:absolute;
-	display:block;
-	left:-6%;
-	width:60%;
+	display:inline-block;
+	margin-left:27%;
+	float:none;
+	left:-26%;
+	width:70%;
+}
+section{
+	/*left: -2%;*/
 }
 .UIsections img{
 	position:relative;
-	float:left;
+	float:none;
+	width:60%;
 	padding:2% 2%;
 }
+
 section{
 	position:relative;
-	left:2%;
-	margin: 0 8% 0 0;
+	left:0%;
+	margin: 3% 8% 0 0;
 	background-image:url(../images/oldpaper2.png);
 	background-repeat:no-repeat;
 	background-size:contain;
 	background-size:100% 100%;
-	width:94%;	
+	width:88%;	
 	height:auto;
 	padding: 5%;
 }
@@ -124,11 +186,74 @@ section1{
 	padding:2%;
 	margin-bottom:3%;
 } 
-#gallery{
-	margin-left:3%;
-	margin-top: 8%;
-	min-height:500px;
-	min-width:90%;
+main #gallery{
+	margin-top:8%;
+}
+#backtotop{
+	position:relative;
+	top:-40%;
+	margin: -3% 0 0 30%;
+}
+section #buttonsPN{
+	display:inline-flex;
+	position:relative;
+	width:60%;
+	margin:60% 0 3% 2%;
+	float:none; 
+	padding:none;
+}
+#prev{
+	position:static;
+	margin-right:0%;
+	font-size:1.5em;
+	width:50%;
 }
 
+#next{
+	position:relative;
+	font-size:1.5em;
+	left:15%;
+}
+
+}
+
+@media only screen and (min-width: 61.25em) {
+section figure.ui_pic{
+	position:absolute;
+	display:inline-block;
+	margin-left:29%;
+	margin-top:-3%;
+	float:none;
+	width:60%;
+	/*left:-26%;*/
+}
+#pic_descriptions p{
+	padding-top:5%;
+}
+	section #buttonsPN{
+	display:inline-flex;
+	position:relative;
+	margin:50% 0% 3% 30%;
+	right:32%;
+	float:none; 
+	padding:none;
+	
+}
+#prev{
+	position:static;
+	margin-right:10%;
+	width:200px;
+	font-size:1.2em;
+}
+
+#next{
+	position:static;
+	font-size:1.2em;
+	width:160px;
+	left: 10%;
+}
+#backtotop{
+	margin-left: 25%;
+	/*left:30%;*/
+}
 }

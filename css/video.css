@@ -26,7 +26,7 @@ video{
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
-@media only screen and (min-width: 28.75em) {
+@media only screen and (min-width: 481px) {
 video#video{
 	 position:absolute;
 	 margin:0 auto;
@@ -38,7 +38,7 @@ video#video{
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
-@media only screen and (min-width: 40.5em) {
+@media only screen and (min-width: 700px) {
 
 .sections img{
 	position:relative;

@@ -8,8 +8,12 @@ function initLinks(){
 		/*e.defaultPrevented();*/		
 	    var href = $(this).attr('href');
 		var ajax_load = "<img src='images/fancybox/fancybox_loading@2x.gif' alt='loading...' />"	
+		var windowWidth = $(window).width();
+		var windowHeight = $(window).height();
+		var objWidth = $('#article1-land').width();
+		var objHeight = $('#article1-land').height();
 		
-		$("#pageAllWrapper").html(ajax_load).fadeIn('slow').load(href);
+		$("#pageAllWrapper").css('top' , (windowHeight/2) -(objHeight/2)).css('left' , (windowWidth/2) - (objWidth/2)).html(ajax_load).fadeIn('slow').load(href);
 		
 		return false;	
 	})
