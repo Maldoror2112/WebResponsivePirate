@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+#article1{
+	display:none;
+}
+video#video{
+	position:relative;
+	display:inline-block;
+	width:90%;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	#article1{
+	display:inline-block;
+}
+video#video{
+	position:relative;
+	display:inline-block;
+	padding:15%;
+	width:70%;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+#article1{
+	display:inline-block;
+}
+#article2{
+	background-image: none;
+}
+section{
+	background-image:url(../images/oldpaper2.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-size:100% 100%;
+	padding: 3%;
+}
+article.pStrong{
+	clear:both;
+	padding:0;
+	margin:0 auto;
+	width:80%;
+}
+/*.sections img{
+	position:relative;
+	float:left;
+	padding:0 2%;
+}*/
+.sections{
+	position:relative;
+	top: -10%;	
+	padding:0%;
+}
+/*section1{
+	padding:2%;
+	margin-bottom:3%;
+} */
+video#video{
+	position:relative;
+	display:inline-block;
+	/*padding-left:15%;*/
+	/*margin:3% 0  0 25%;*/
+	width:60%;
+	/*height:auto;*/
+}
+}
+
+@media only screen and (min-width: 1000px) {
+
+video#video{
+	position:relative;
+	display:inline-block;
+	/*padding-left:15%;*/
+	margin:0 0 0 10%;
+	width:50%;
+	/*height:auto;*/
+}
+}
