@@ -441,8 +441,8 @@ section #buttonsPN{
 	position:relative;
 	clear: both;
 	float: left;
-	margin:0% 0% 0 3%;
-	width: 95%;
+	margin:0% 0% 0 0%;
+	width: 93%;
 	height:auto;
 	min-height:40px;
 	display: block;
@@ -488,7 +488,7 @@ article.newsStrong{
 	margin:6% 0 0 37%;	
 }
 #backtotop a{
-	font-size:1.7em;
+	font-size:1.2em;
 }
 
 /*START OF GALLERY STYLES for 46 em!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -618,7 +618,9 @@ section #buttonsPN{
 	left: 10%;
 }
 #backtotop{
-	margin-left: 25%;
+	margin-left: 35%;
+	width:30%;
+	font-size:1.2em;
 	/*left:30%;*/
 }
 }

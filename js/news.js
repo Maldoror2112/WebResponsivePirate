@@ -2,6 +2,8 @@
 $(document).ready(function(){
 	
 	$('#article1-land').remove();
+	
+ 
 
 	$("#sidenews_list").on('click', 'a', function(e){
 		/*e.preventDefault();*/
@@ -16,7 +18,11 @@ $(document).ready(function(){
 			  $("#backtotop").css({"position": "relative", "top": "-20px"});
 			  $("#footerbottom").css({"position": "relative", "top": "-360px"});
 			 /* $("#article1").addClass("news-article");*/
-		  }		
+		  }
+		   //using the back to top button at the bottom of the page.
+          $('.top').click(function(){
+	        $('html, body').animate({scrollTop: 0}, '1000');
+          });	 		
 		
 		});
 		

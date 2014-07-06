@@ -192,11 +192,7 @@ section #buttonsPN{
 	font-size:1.5em;
 	left:15%;
 }
-/*#backtotop{
-	position:relative;
-	top:-40%;
-	margin: 3% 0 0 20%;
-}*/
+
 }
 
 @media only screen and (min-width: 61.25em) {
@@ -215,10 +211,11 @@ section figure.ui_pic{
 	section #buttonsPN{
 	display:inline-flex;
 	position:relative;
-	margin:50% 0% 3% 30%;
-	right:32%;
+	/*margin:50% 0% 3% 0%;*/
+	/*right:32%;*/
 	float:none; 
 	padding:none;
+	top:-5%;
 	
 }
 #prev{

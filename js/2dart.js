@@ -28,7 +28,11 @@ $(document).ready(function(){
     $(this).css('z-index', z); //apply increased z-index to <img>
 	});
   
-	 
+  //using the back to top button at the bottom of teh page.
+  $('.top').click(function(){
+	  $('html, body').animate({scrollTop: 0}, '1000');
+  });	 
+  
   function swapFirstLast(isFirst) {
 	
     if(inAnimation) return false; //if already swapping pictures just return
