@@ -52,22 +52,7 @@ section #buttonsPN{
 #prev{
 	margin: 0 7% 0 0%;
 }
-#backtotop{
-	position:relative;
-	margin:10% 0 0 27%;	
-	top:30%;
-}
-#backtotop a{
-	font-family: 'Yellowtail', cursive;
-	font-size:1.4em;
-	position:relative;	
-	display:inline-block;	
-	background-image:url(../images/backboard.png);
-	background-repeat:no-repeat;
-	background-size:100% 100%;
-	text-align:center;
-	padding:2%;	
-}
+
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. IPad in portrait mode, Samsung in landscape*/
 
@@ -78,12 +63,12 @@ section #buttonsPN{
 #article2{
 	background-image: none;
 	position:relative;
-	right:-2%;
-	
+	margin-left:5%;	
 }
 main #gallery{
 	position:relative;
-	margin-top:8%;
+	margin-top:10%;
+	top:4%;
 }
 section figure.ui_pic{
 	position:absolute;
@@ -103,12 +88,7 @@ section{
 	padding: 3%;
 	width:98%;
 }
-/*figure.ui_pic{
-	position:absolute;
-	display:block;
-	left:-6%;
-	width:60%;
-}*/
+
 #pic_descriptions p{
 	float:right;
 	position:relative;
@@ -123,26 +103,29 @@ section #buttonsPN{
 	position:static;
 	float:none; 
 	padding:none;
-	margin:60% 0 5% 20%;
+	margin:60% 0 5% 0%;
 }
-
 #backtotop{
 	position:relative;
-	left:10%;
+	margin-top:-30%;
+	/*top:-40%;*/
+	/*margin: 3% 0 0 20%;*/
 }
-/*#backtotop a{
-	font-family: 'Yellowtail', cursive;
-	font-size:1.4em;
-	position:relative;	
-	display:inline-block;	
-	background-image:url(../images/backboard.png);
-	background-repeat:no-repeat;
-	background-size:100% 100%;
-	text-align:center;
-	padding:5%;	
-}*/
 }
-
+@media only screen and (min-width: 30.313em){
+section figure.ui_pic{
+	position:absolute;
+	margin:0 0 0 28%;
+	left:-26%;
+	width:70%;
+}
+#pic_descriptions p{
+	
+}
+section #buttonsPN{
+	
+}
+}
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. Ipad in landscape, desktop*/
 
 @media only screen and (min-width: 48em) {
@@ -189,11 +172,7 @@ section1{
 main #gallery{
 	margin-top:8%;
 }
-#backtotop{
-	position:relative;
-	top:-40%;
-	margin: -3% 0 0 30%;
-}
+
 section #buttonsPN{
 	display:inline-flex;
 	position:relative;
@@ -208,13 +187,16 @@ section #buttonsPN{
 	font-size:1.5em;
 	width:50%;
 }
-
 #next{
 	position:relative;
 	font-size:1.5em;
 	left:15%;
 }
-
+/*#backtotop{
+	position:relative;
+	top:-40%;
+	margin: 3% 0 0 20%;
+}*/
 }
 
 @media only screen and (min-width: 61.25em) {
@@ -252,8 +234,5 @@ section figure.ui_pic{
 	width:160px;
 	left: 10%;
 }
-#backtotop{
-	margin-left: 25%;
-	/*left:30%;*/
-}
+
 }
