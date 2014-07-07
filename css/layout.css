@@ -23,6 +23,7 @@ img, object, embed, video {
 */
 
 /* Mobile Layout: 480px and below. */
+
 li{
 	font-size:inherit;	
 }
@@ -34,12 +35,19 @@ div .pStrong{
 	padding:2%;
 }
 #wrapper{
+	margin: 0 0 0 -2%;
+	position: relative;
+	width: 100%;
+	height:1000px;
+	overflow:hidden;
+}
+/*#wrapper{
 	float:left;
 	margin-right: auto;
 	width: 38%;
 	padding-left: 1.5489%;
 	padding-right: 1.5489%;
-}
+}*/
 .gridContainer {
 	margin-left: auto;
 	margin-right: auto;
@@ -55,7 +63,11 @@ div .pStrong{
 	display: inline-block;
 	margin-top:0%; 
 }
-	#article1-land {
+#nav{
+	position:relative;
+	z-index:2;
+}
+#article1-land {
 	clear: both;
 	float: none;
 	width: 90%;
@@ -63,6 +75,7 @@ div .pStrong{
 	display: inline-block;
 	position:relative;
 	top:10%;
+	left:2%;
 }
 #landingText{
 	font-size:1.1em;	
@@ -79,6 +92,7 @@ div .pStrong{
 	display:list-item;
 	margin:120% 0% 0 0%;
 	left:2.5%;
+	z-index:1;
 }
 #skull{
 	 clear: both;
@@ -97,6 +111,7 @@ div .pStrong{
 	display: inline-block;
 	padding:0px;
 	padding-right:1.3707%;
+	z-index:1;
 }
 #sidenews_list {	
 	font-size: 1.0em;
@@ -108,6 +123,7 @@ div .pStrong{
 	height:auto;
 	display: inline-block;
 	margin:5% 3% 0 0;
+	z-index:1;
 }
 #footer {
 	clear: both;
@@ -246,8 +262,34 @@ section #buttonsPN{
 	text-align:center;
 	padding:2%;	
 }
-
+/*Begining of seperate background pieces!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#compassStart{
+	display:none;	
+}
+#bookStart{
+	display:none;
+}
+#leavesLeft{
+  display:none;
+}
+#leavesRight{
+	display:none;
+}
+#leavesRight2{
+	display:none;	
+}
+/* Tablet Layout: 360px to 770px. Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 22.7em) {
+body{
+		max-width:760px;
+		overflow:hidden;
+}
+#wrapper{
+	/*width:100%;*/
+	min-height:900px;
+	height:auto;
+	overflow:hidden;
+}
 #article1 {
 	clear: both;
 	float: right;
@@ -255,11 +297,18 @@ section #buttonsPN{
 	font-weight:200;
 	color:362008;
 	padding:4%;
-	width: 92%;
+	width: 94%;
 	height:auto;
-	/*display:list-item;*/
-	margin:69% 3% 8% 0%;
-	/*left:2.0%;*/
+	margin:51% 0% 8% 0%;
+}
+#article1-land{
+	position:static;
+	width:80%;
+	margin-top: -10%;
+	margin-left: 10%;
+}
+#landingText{
+	font-size:1.3em;	
 }
 #skull{
 	 clear: both;
@@ -272,9 +321,9 @@ section #buttonsPN{
 	clear: both;
 	float:left;
 	position:absolute;
-	margin:27% 2% 0 0;
+	margin:25% 0% 0 0;
 	right:0%;
-	width: 95%;
+	width: 98%;
 	display: inline-block;
 	padding:0px;
 	padding-right:1.3707%;
@@ -285,10 +334,10 @@ section #buttonsPN{
 #article2 {
 	clear: both;
 	position:relative;
-	width:94%;	
+	width:100%;	
 	height:auto;
 	display: inline-block;
-	margin:0% 0% 0 0;
+	margin:-5% 0% 0 1%;
 	right:0%;
 }
 #footer {
@@ -386,6 +435,61 @@ section #buttonsPN{
 	left: 10%;
 }
 
+/*Beginning of seperate background pieces!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#compassStart{
+	clear:none;
+	padding:0;
+	position:relative;
+	-webkit-backface-visibility:hidden;
+	display:inline-block;
+	left:60%;
+	top:10%;
+	width:20%;
+	height:auto;	
+}
+#bookStart{
+	clear:none;
+	padding:0;
+	display:none;
+	position:fixed;
+	-webkit-backface-visibility:hidden;	
+	top:65%;
+	left:20%;
+	width:70%;
+	z-index:0;
+}
+#leavesLeft{
+	clear:left;
+	float:left;
+	padding:0;
+	position:fixed;
+	-webkit-backface-visibility:hidden;
+	display:block;
+	top:10%;
+	right:78%;
+	width:70%;
+}
+#leavesRight{
+	clear:right;
+	float:right;
+	padding:0;
+	position:fixed;
+	-webkit-backface-visibility:hidden;
+	display:block;
+	top:2%;
+	left:85%;
+	width:70%;
+}
+#leavesRight2{
+	clear:right;
+	padding:0;
+	position:fixed;
+	-webkit-backface-visibility:hidden;
+	display:inline-block;	
+	top:40%;
+	left:75%;
+	width:70%;
+}
 }
 
 @media only screen and (min-width: 30.313em){
@@ -398,7 +502,7 @@ section #buttonsPN{
 	font-size: 1.0em;
 	width:35%;
 }
-	section #buttonsPN{
+section #buttonsPN{
 	display:inline-flex;
 	position:relative;
 	margin:45% 0 3% 2%;
@@ -407,11 +511,38 @@ section #buttonsPN{
 	padding:none;
 	/*margin:45% 0 0 8%;*/	
 }
+
 }
-/* Tablet Layout: 360px to 770px. Inherits styles from: Mobile Layout. */
+/* Tablet Layout: 770px to 980. Inherits styles from: Mobile Layout. Ipad in landscape, desktop*/
 
 @media only screen and (min-width: 48em) {
-
+/*body{
+	min-width:800px;
+	height:auto;
+	overflow:hidden;
+}*/
+#article1-land {
+	clear: both;
+	float: none;
+	width: 90%;
+	height:auto;
+	display: inline-block;
+	position:relative;
+	top:10%;
+	left:5%;
+}
+#landingText{
+	font-size:1.6em;	
+}
+#bookStart{
+	clear:both;
+	padding:0;
+	position:absolute;	
+	top:89%;
+	left:20%;
+	width:70%;
+	z-index:-1;
+}
 #article1 {
 	position:relative;
 	clear: both;
@@ -441,7 +572,7 @@ section #buttonsPN{
 	position:relative;
 	clear: both;
 	float: left;
-	margin:0% 0% 0 0%;
+	margin:0% 0% 0 3%;
 	width: 93%;
 	height:auto;
 	min-height:40px;
@@ -529,11 +660,55 @@ section #buttonsPN{
 	position:static;
 	left: 40%;
 }
+/*start of individual background peices!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#compassStart{
+	clear:both;
+	padding:0;
+	position:absolute;
+	left:50%;
+	top:0%;
+	width:27%;
+	height:auto;
+	z-index:0;
+}
+#bookStart{
+	position:absolute;	
+	top:56%;
+	left:10%;
+}
+
+#leavesLeft{
+	clear:both;
+	padding:0;
+	position:absolute;
+	top:10%;
+	right:73%;
+}
+#leavesRight{
+	clear:both;
+	padding:0;
+	position:absolute;
+	top:-4%;
+	left:80%;
+}
+#leavesRight2{
+	/*clear:both;*/
+	/*display:inline-block;*/
+	padding:0;
+	position:absolute;	
+	top:50%;
+	left:70%;
+}
 }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout.IPad in landscape mode */
 
 @media only screen and (min-width: 61.25em) {
+/*body{
+	min-width:1000px;
+	height:auto;
+	overflow:hidden;
+}*/
 p{
 	font-size:large;
 }

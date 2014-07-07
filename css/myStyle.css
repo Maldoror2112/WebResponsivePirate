@@ -113,7 +113,7 @@ footer{
 	margin-top:15px;	
 }
 
-#sidenews {
+/*#sidenews {
 	text-align:center;
 	font-size:12px;		
 	background-image:url(../images/backboard.png);
@@ -124,9 +124,9 @@ footer{
 
 #sidenews_list{
 	/*margin-right:10px;*/
-	text-align:center;	
+	/*text-align:center;*/	
 }
-
+*/
 #sidelist{
 	/*margin:0px 0px 0px 0px;*/
 	padding:0px 0px 90px -20px;
