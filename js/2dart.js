@@ -4,8 +4,7 @@ $(document).ready(function(){
 	$("#sidenews_list").on('click', 'a', function(e){
 		e.preventDefault();
 		var ajax_load = "<img src='..images/fancybox/fancybox_loading@2x.gif' alt='loading...' />"
-		var href = $(this).attr('href');
-		
+		var href = $(this).attr('href');		
 		
 		$("#article2").html(ajax_load).load(href).fadeIn('1000');
 					
@@ -28,11 +27,7 @@ $(document).ready(function(){
     $(this).css('z-index', z); //apply increased z-index to <img>
 	});
   
-  //using the back to top button at the bottom of teh page.
-  $('.top').click(function(){
-	  $('html, body').animate({scrollTop: 0}, '1000');
-  });	 
-  
+	 
   function swapFirstLast(isFirst) {
 	
     if(inAnimation) return false; //if already swapping pictures just return

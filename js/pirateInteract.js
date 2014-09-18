@@ -13,11 +13,12 @@ function initLinks(){
 		var objWidth = $('#article1-land').width();
 		var objHeight = $('#article1-land').height();
 		
-		$("#pageAllWrapper").css('top' , (windowHeight/2) -(objHeight/2)).css('left' , (windowWidth/2) - (objWidth/2)).html(ajax_load).fadeIn('slow').load(href);
+		$("#pageAllWrapper").html(ajax_load).fadeIn('slow').load(href);
 		
 		return false;	
 	})
 	
+	/*.css('top' , (windowHeight/2) -(objHeight/2)).css('left' , (windowWidth/2) - (objWidth/2))*/
 	
 	/*function move_div(){
 		var windowWidth = $(window).width();
