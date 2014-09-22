@@ -11,6 +11,31 @@ img, object, embed, video {
 .ie6 img {
 	width:100%;
 }
+body{
+	background-image:url(../images/headerback.jpg);
+    background-repeat: repeat-x;
+    background-position: top;
+	background-color:#000000;
+	}
+
+p{
+	
+	color:362008;
+}
+
+li{
+	clear:both;
+	padding-top:15px;
+	text-align:left;
+	list-style-type:none;
+	font-size:inherit;	
+}
+
+a:link{	text-decoration:none; color:#800000;}
+
+/*a:visited{color:#CCC; text-decoration:none;}*/
+
+a:hover{color:#E70E23; text-decoration:none;}
 
 /*
 	
@@ -23,10 +48,6 @@ img, object, embed, video {
 */
 
 /* Mobile Layout: 480px and below. */
-
-li{
-	font-size:inherit;	
-}
 div .pStrong{
 	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	font-size: .9em;
@@ -41,13 +62,7 @@ div .pStrong{
 	height:auto;
 	overflow:hidden;
 }
-/*#wrapper{
-	float:left;
-	margin-right: auto;
-	width: 38%;
-	padding-left: 1.5489%;
-	padding-right: 1.5489%;
-}*/
+
 .gridContainer {
 	margin-left: auto;
 	margin-right: auto;
@@ -69,16 +84,34 @@ div .pStrong{
 }
 #article1-land {
 	clear: both;
-	float: none;
-	width: 90%;
-	height:auto;
-	display: inline-block;
+	float: none;	
 	position:relative;
+	display: inline-block;
+	padding:10px;
+	margin:0 auto;
+	text-align:center;
+	background-image:url(../images/oldpaper2.png);
+	background-size:contain;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	border:thin #633;
+	width: 90%;
+	height:auto;	
 	top:10%;
 	left:2%;
 }
 #landingText{
-	font-size:1.1em;	
+	font-size:1.1em;
+	font-family: 'Yellowtail', cursive;
+	text-align:center;
+	padding:5%;	
+}
+.articleButton{
+	font-size:1.4em;
+	display:list-item;
+	list-style:none;
+	padding: .5em 0 .5em 0;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 }
 #article1 {
 	clear: both;
@@ -102,6 +135,12 @@ div .pStrong{
 	 padding:0px 0px 0px 0px;
 }	
 #sidenews {
+	text-align:center;
+	font-size:12px;		
+	background-image:url(../images/backboard.png);
+	background-size:contain;
+	background-size:100% 100%;
+	background-repeat:no-repeat;	
 	clear: both;
 	float:left;
 	position:absolute;
@@ -115,6 +154,11 @@ div .pStrong{
 }
 #sidenews_list {	
 	font-size: 1.0em;
+	text-align:center;
+}
+
+#sidelist{
+	padding:0px 0px 90px -20px;
 }
 #article2 {
 	clear: both;
@@ -125,22 +169,6 @@ div .pStrong{
 	margin:5% 3% 0 0;
 	z-index:1;
 }
-#footer {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	margin-top:10px;
-	width: 100%;
-	display: block;
-	text-align:center;
-}
-#footerbottom {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
 
 #lepidoptera_pic{
 	display:block;
@@ -150,7 +178,53 @@ div .pStrong{
 	width:20%;
 	margin:0 5%;
 }
+.a1h2{
+	font-size:24px;
+	font-family: 'Yellowtail', cursive;
+	text-align:center;
+	font-weight:bold;
+}
+.a2h2{
+	font-size:24px;
+	font-family: 'Yellowtail', cursive;
+	text-align:center;
+	font-weight:bold;
+}
+.articleButton:link{
+	text-decoration:none; 
+	color:#800000;
+	cursor:pointer;
+}
+.articleButton:hover{
+	color:#E70E23; 
+	text-decoration:none;		
+	cursor:pointer;
+}
+a:active{color:#311E15; text-decoration:none;}
 
+h2{
+	font-family: 'Yellowtail', cursive;
+	font-size:24px;
+	color:362008;
+	margin-bottom: 15px;
+	text-align:center;
+  }
+  
+h3{
+	font-family: 'Yellowtail', cursive;
+	text-align:center;
+  }
+  
+h4{
+	font-family: 'Yellowtail', cursive;
+	color:#000;
+	text-align:center;
+  }
+#authorArticle p{
+	 display:inline-block;
+	 font-weight:bold;
+	 text-align:center;
+}
 article.newsStrong{
 	clear: both;
 	float: none;
@@ -167,6 +241,31 @@ article.newsStrong{
 	color:362008;
 	padding:4%;
 }
+/*footer{
+	color:#930;
+	text-align:center;
+	margin-top:15px;	
+}*/
+/*#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:10px;
+	width: 100%;
+	display: block;
+	text-align:center;
+}*/
+#footerbottom {
+	text-align:center;
+	color:#FFF;	
+	clear: both;
+	float: left;
+	margin-top:30px;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
 #backtotop{
 	position:relative;
 	margin:10% 0 0 27%;	
@@ -274,8 +373,18 @@ section #buttonsPN{
 #bookStart{
 	display:none;
 }
-#leavesLeft{
-  display:none;
+#leavesLeft div{
+	position:fixed;
+	width:25em;
+	height:35em;
+	background-image:url(../images/leavesLeft.png);
+	background-size:contain;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	clear:both;
+	display:block;
+	top:15%;
+	left:-94%;
 }
 #leavesRight{
 	display:none;
@@ -472,16 +581,11 @@ figure.drag_pic{
 	width:70%;
 	z-index:0;
 }
-#leavesLeft{
-	clear:left;
-	float:left;
-	padding:0;
-	position:fixed;
-	-webkit-backface-visibility:visible;
-	display:block;
-	top:10%;
-	right:78%;
-	width:70%;
+#leavesLeft div{
+	height:30em;
+	width:30em;	
+	top:15%;
+	left:-35%;
 }
 #leavesRight{
 	clear:right;
@@ -689,13 +793,7 @@ figure.drag_pic{
 	top:56%;
 	left:10%;
 }
-#leavesLeft{
-	clear:both;
-	padding:0;
-	position:absolute;
-	top:10%;
-	right:73%;
-}
+
 #leavesRight{
 	clear:both;
 	padding:0;
@@ -784,19 +882,26 @@ p{
 	min-height:40px;
 	display: block;
 }
-
 #bookStart{
 	position:absolute;	
 	top:56%;
 	left:10%;
 }
-
-#leavesLeft{
+#leavesLeft div{
+	width:40em;
+	height:40em;	
+	clear:both;
+	display:block;
+	top:15%;
+	left:-26%;
+}	
+#leavesRight{
 	clear:both;
 	padding:0;
-	position:absolute;
-	top:10%;
-	right:63%;
+}
+#leavesRight2{
+	clear:both;
+	padding:0;
 }
 
 /*START OF GALLERY STYLES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -868,7 +973,6 @@ figure.drag_pic{
 	margin-right:10%;
 	font-size:1.0em;
 }
-
 #next{
 	position:static;
 	font-size:1.0em;
